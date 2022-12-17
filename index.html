@@ -14,7 +14,7 @@
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Plus+Jakarta+Sans:wght@400;600;700&family=Poppins:wght@200;300;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700&family=Poppins:wght@200;300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -36,6 +36,10 @@
     />
 
     <style>
+      * {
+        color: #303030;
+      }
+
       #mainNav {
         background-color: white;
       }
@@ -57,7 +61,7 @@
         width: 75%;
       }
 
-      #mainTxt {
+      #mainTxt, .marker, .headline {
         font-family: "Plus Jakarta Sans";
         font-weight: 700;
         font-size: 70px;
@@ -70,7 +74,7 @@
         font-size: 30px;
       }
 
-      #buyBtn {
+      #buyBtn, .category {
         background-color: #b07af4;
         color: white;
         font-family: "Barlow Condensed";
@@ -79,23 +83,22 @@
       }
 
       section {
-        margin: 100px 0;
+        padding: 100px 0;
       }
 
       .marker {
-        font-family: "Plus Jakarta Sans";
-        font-weight: 700;
         font-size: 50px;
       }
 
       .category {
-        font-family: "Barlow Condensed";
-        font-size: 20px;
-        letter-spacing: 2px;
+        color: inherit;
+        background-color: inherit;
+        font-weight: 500;
       }
 
       .carousel {
         width: 100%;
+        display: flex;
       }
 
       .txt {
@@ -105,37 +108,81 @@
       .details,
       .colorsTxt {
         font-family: "Plus Jakarta Sans";
+        font-size: 24px;
       }
 
       .colorsTxt {
         max-width: 100%;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 700;
       }
 
-      .section1-img {
-        width: 500px;
+      .section1 {
+        width: auto;
       }
-      
-      .slick-slide {
-        margin-right: 20px;
+      .section1img {
+        width: 800px;
       }
 
-      .slick-next:before,
-      .slick-prev:before {
-        font-family: slick;
+      .slick-slide {
+        margin: auto 70px;
+        display: flex;
+        justify-content: end;
+      }
+
+      .slick-dots {
+        display: flex;
+        justify-content: start;
+        margin: 0;
+        padding: 0;
         position: relative;
-        font-size: 30px;
-        line-height: 1;
-        opacity: 0.75;
-        color: gray;
-        width: 100%;
+        bottom: 0;
+      }
+
+      .slick-dots li {
+        margin: 0 35px 0 0;
+      }
+
+      #slick-slide-control00::before,
+      #slick-slide-control01::before,
+      #slick-slide-control02::before,
+      #slick-slide-control03::before {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #aecbf3;
+        content: "";
+        opacity: 0.5;
+      }
+
+      .slick-active > #slick-slide-control00::before,
+      .slick-active > #slick-slide-control01::before,
+      .slick-active > #slick-slide-control02::before,
+      .slick-active > #slick-slide-control03::before {
+        opacity: 1;
+      }
+
+      #slick-slide-control01::before {
+        background-color: #757c83;
+      }
+
+      #slick-slide-control02::before {
+        background-color: #b292c7;
+      }
+
+      #slick-slide-control03::before {
+        background-color: #fcdac3;
+      }
+
+      /* Section 2 */
+      .headline {
+        font-size: 70px;
       }
     </style>
   </head>
   <body id="pageTop">
     <nav id="mainNav" class="navbar navbar-expanded-lg fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
             src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/logo.svg"
@@ -175,11 +222,11 @@
     </nav>
 
     <header>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row gx-5 d-flex my-5">
           <div class="d-flex align-items-center col-12 col-md-5">
             <div>
-              <span id="subTxt">Galaxy Z Flip 4</span>
+              <span id="subTxt">Galaxy Z Flip4</span>
               <h1 id="mainTxt">Unfold your world</h1>
               <button
                 id="buyBtn"
@@ -203,12 +250,12 @@
     </header>
     <!-- Part 1 -->
     <section>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row d-flex align-items-center mx-0">
           <div class="col-12">
             <span class="marker">01</span> <i class="fa-solid fa-dash"></i>
           </div>
-          
+
           <div
             class="d-flex justify-content-center align-items-center col-12 col-md-5"
           >
@@ -221,31 +268,94 @@
                 <b>goes with everything</b> — but
                 <b>looks like nothing else</b>.
               </p>
+
+              <div class="py-4" id="scheme">
+                <!-- Appended Slick Controller -->
+              </div>
             </div>
           </div>
 
           <div class="d-flex align-items-center col-12 col-md-7">
             <div class="carousel">
               <div class="section1">
-                <h4 class="colorTxt">BLUE</h4>
-                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true" alt="Galaxy Z Flip 4 - Blue" class="section1-img">
+                <h4 class="colorsTxt" style="color: #7c96d9">BLUE</h4>
+                <img
+                  src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
+                  alt="Galaxy Z Flip 4 - Blue"
+                  class="section1-img"
+                />
               </div>
 
               <div class="section1">
-                <h4 class="colorTxt">GRAPHITE</h4>
-                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true" alt="Galaxy Z Flip 4 - Blue" class="section1-img">
+                <h4 class="colorsTxt" style="color: #707086">GRAPHITE</h4>
+                <img
+                  src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
+                  alt="Galaxy Z Flip 4 - Blue"
+                  class="section1-img"
+                />
               </div>
 
               <div class="section1">
-                <h4 class="colorTxt">BORA PURPLE</h4>
-                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true" class="section1-img">
+                <h4 class="colorsTxt" style="color: #9e6ede">BORA PURPLE</h4>
+                <img
+                  src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
+                  class="section1-img"
+                />
               </div>
 
               <div class="section1">
-                <h4 class="colorTxt">PINK</h4>
-                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true" class="section1-img">
+                <h4 class="colorsTxt" style="color: #faa084">PINK</h4>
+                <img
+                  src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true"
+                  class="section1-img"
+                />
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="row mx-0" style="margin: 150px auto">
+          <div class="col-12 col-md-7">
+            <img
+              src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_compact_img.jpg"
+              alt="Samsung Glaxy Z Flip 4 Compact Size"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="d-flex justify-content-end align-items-center col-12 col-md-5"
+          >
+            <div class="txt" style="text-align: right; width: 85%">
+              <span class="category">COMPACT SIZE</span>
+              <br />
+              <p class="headline">Fits all your fits</p>
+              <br />
+              <br />
+              <p class="details">
+                The era of planning looks around your phone is over.
+                <b>Small but mighty</b> when folded, Galaxy Z Flip4 is a
+                <b>compact full-sized</b> smartphone, and just the right size to
+                slip in a pocket when it's time to slay.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: #101010">
+      <div class="container">
+        <div class="row d-flex align-items-center mx-0">
+          <div class="col-12">
+            <span class="marker" style="color: white">02</span> <i class="fa-solid fa-dash"></i>
+          </div>
+
+          <div class="d-flex align-items-center col-12 col-md-4">
+            <p class="headline" style="color: white">Withstands drips and drops</p>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <img src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_durability_top.jpg" alt="" class="img-fluid">
           </div>
         </div>
       </div>
@@ -266,15 +376,17 @@
     <script type="text/javascript">
       $(".carousel").slick({
         dots: true,
-        arrows: true,
+        arrows: false,
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        center: false,
+        centerMode: true,
         variableWidth: true,
         autoplaySpee: 2000,
       });
+
+      $(".slick-dots").appendTo("#scheme");
     </script>
   </body>
 </html>
