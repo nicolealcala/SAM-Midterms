@@ -24,6 +24,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
 
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
     <style>
       #mainNav {
         background-color: white;
@@ -39,7 +50,11 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        padding: 124px 0;
+        padding: 170px 0;
+      }
+
+      .container-fluid {
+        width: 75%;
       }
 
       #mainTxt {
@@ -73,17 +88,48 @@
         font-size: 50px;
       }
 
-      .txt {
-        width: 70%;
-      }
-
       .category {
         font-family: "Barlow Condensed";
         font-size: 20px;
         letter-spacing: 2px;
       }
 
-      .section1 {
+      .carousel {
+        width: 100%;
+      }
+
+      .txt {
+        width: 70%;
+      }
+
+      .details,
+      .colorsTxt {
+        font-family: "Plus Jakarta Sans";
+      }
+
+      .colorsTxt {
+        max-width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .section1-img {
+        width: 500px;
+      }
+      
+      .slick-slide {
+        margin-right: 20px;
+      }
+
+      .slick-next:before,
+      .slick-prev:before {
+        font-family: slick;
+        position: relative;
+        font-size: 30px;
+        line-height: 1;
+        opacity: 0.75;
+        color: gray;
+        width: 100%;
       }
     </style>
   </head>
@@ -129,7 +175,7 @@
     </nav>
 
     <header>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row gx-5 d-flex my-5">
           <div class="d-flex align-items-center col-12 col-md-5">
             <div>
@@ -157,69 +203,47 @@
     </header>
     <!-- Part 1 -->
     <section>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row d-flex align-items-center mx-0">
           <div class="col-12">
             <span class="marker">01</span> <i class="fa-solid fa-dash"></i>
           </div>
+          
           <div
-            class="d-flex justify-content-center align-ites-center col-12 col-md-4"
+            class="d-flex justify-content-center align-items-center col-12 col-md-5"
           >
             <div class="txt">
               <span class="category">COLOURS</span>
               <br />
               <br />
-              <p>
+              <p class="details">
                 Choose a color for your Samsung Galaxy Z Flip4 that
                 <b>goes with everything</b> — but
                 <b>looks like nothing else</b>.
               </p>
             </div>
           </div>
-          <div class="d-flex align-items-center col-12 col-md-8">
+
+          <div class="d-flex align-items-center col-12 col-md-7">
             <div class="carousel">
               <div class="section1">
-                <div>
-                  <h4>BLUE</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
-                    alt=""
-                    class=""
-                  />
-                </div>
+                <h4 class="colorTxt">BLUE</h4>
+                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true" alt="Galaxy Z Flip 4 - Blue" class="section1-img">
               </div>
 
               <div class="section1">
-                <div>
-                  <h4>GRAPHITE</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+                <h4 class="colorTxt">GRAPHITE</h4>
+                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true" alt="Galaxy Z Flip 4 - Blue" class="section1-img">
               </div>
 
               <div class="section1">
-                <div>
-                  <h4>BORA PURPLE</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+                <h4 class="colorTxt">BORA PURPLE</h4>
+                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true" class="section1-img">
               </div>
 
               <div class="section1">
-                <div>
-                  <h4>PINK</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
+                <h4 class="colorTxt">PINK</h4>
+                <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true" class="section1-img">
               </div>
             </div>
           </div>
@@ -239,51 +263,17 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
-    <script>
+    <script type="text/javascript">
       $(".carousel").slick({
-        dots: false,
+        dots: true,
         arrows: true,
         infinite: true,
-        speed: 300,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        cssEase: "ease-out",
-        slidesToShow: 6,
-        slidesToScroll: 2,
+        autoplay: true,
+        center: false,
         variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 1024,
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
-              variableWidth: false,
-            },
-          },
-          {
-            breakpoint: 600,
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              variableWidth: false,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              breakpoint: 431,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: false,
-              },
-            },
-          },
-        ],
+        autoplaySpee: 2000,
       });
     </script>
   </body>
