@@ -76,12 +76,15 @@
       .txt {
         width: 70%;
       }
+
       .category {
         font-family: "Barlow Condensed";
         font-size: 20px;
         letter-spacing: 2px;
       }
 
+      .section1 {
+      }
     </style>
   </head>
   <body id="pageTop">
@@ -159,7 +162,9 @@
           <div class="col-12">
             <span class="marker">01</span> <i class="fa-solid fa-dash"></i>
           </div>
-          <div class="d-flex justify-content-center align-ites-center col-12 col-md-4">
+          <div
+            class="d-flex justify-content-center align-ites-center col-12 col-md-4"
+          >
             <div class="txt">
               <span class="category">COLOURS</span>
               <br />
@@ -171,9 +176,40 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-8">
-            <div class="card">
-              <img src="" alt="" class="img-fluid">
+          <div class="d-flex align-items-center col-12 col-md-8">
+            <div class="carousel">
+              <div class="section1">
+                <div>
+                  <h4>BLUE</h4>
+                  <img
+                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
+                    alt=""
+                    class=""
+                  />
+                </div>
+              </div>
+
+              <div class="section1">
+                <div>
+                  <h4>GRAPHITE</h4>
+                  <img
+                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <div class="section1">
+                <div>
+                  <h4>BORA PURPLE</h4>
+                  <img
+                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -185,5 +221,59 @@
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+    <!-- Slick -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(".carousel").slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        cssEase: "ease-out",
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+              variableWidth: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              variableWidth: false,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              breakpoint: 431,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false,
+              },
+            },
+          },
+        ],
+      });
+    </script>
   </body>
 </html>
