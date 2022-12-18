@@ -136,6 +136,7 @@
       .position-absolute {
         left: 0;
         top: auto;
+        z-index: 1;
       }
 
       .slick-slide {
@@ -377,8 +378,8 @@
             class="d-flex justify-content-end align-items-center col-12 col-md-6"
           >
             <div
-              class="txt"
-              style="text-align: right; width: 85%; margin: 150px 0"
+              class="txt text-start"
+              style="width: 85%; margin: 162px 0"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-delay="1"
@@ -414,8 +415,8 @@
           <!-- Section2-Text1 -->
           <div class="d-flex align-items-center col-12 col-md-6">
             <div
-              class="txt"
-              style="text-align: left; width: 85%"
+              class="txt text-start"
+              style="width: 85%"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-delay="1"
@@ -433,7 +434,7 @@
               >
               <br />
               <br />
-              <p class="details" style="color: #e9e9e9">
+              <p class="details" style="color: #bfbfbf">
                 Water you worried about? Water-resistant foldable smartphones.
                 It can hang out in <b style="color: white">1.5 meters</b> of
                 water for up to 30 minutes without breaking a sweat.
@@ -479,11 +480,11 @@
 
           <!-- Section2-Text2 -->
           <div
-            class="d-flex justify-content-end align-items-center col-12 col-md-6"
+            class="d-flex justify-content-center align-items-center col-12 col-md-6"
           >
             <div
-              class="txt"
-              style="text-align: right; width: 83%"
+              class="txt text-start"
+              style="width: 85%"
               data-aos="fade-left"
               data-aos-easing="linear"
               data-aos-delay="1"
@@ -496,7 +497,7 @@
               </p>
               <br />
               <br />
-              <p class="details" style="color: #e9e9e9">
+              <p class="details" style="color: #bfbfbf">
                 The <b style="color: white">6.7-inch display</b> unfolds a
                 beautiful view thanks to Ultra Thin Glass. Advanced durability
                 makes it stronger than ever — staying tough through
@@ -511,7 +512,11 @@
     <!-- Part 3 -->
     <section id="section3">
       <div class="container-fluid">
-        <div id="section3-row1" class="row mx-0" style="padding: 370px 0 350px 0">
+        <div
+          id="section3-row1"
+          class="row mx-0"
+          style="padding: 370px 0 350px 0"
+        >
           <!-- Section3-Text1 -->
           <div class="d-flex justify-content-center align-items-center col-12">
             <p
@@ -550,9 +555,10 @@
           </div>
 
           <!-- Section3-Text2 -->
-          <div class="col-12" style="margin-top: 70px">
+          <div class="d-flex justify-content-center align-items-center col-12" style="margin-top: 70px">
             <p
               class="details text-center"
+              style="width: 60%"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-delay="5"
@@ -573,13 +579,16 @@
 
     <!-- Part 4 -->
     <section>
-      <div class="container-fluid" style="background-color: pink; overflow: hidden">
-        <div id="section4-row1" class="row mx-0" style="overflow: auto">
+      <div class="container-fluid">
+        <div id="section4-row1" class="row mx-0">
           <div class="col-12">
             <span class="marker">03</span>
           </div>
           <!-- Section4-Text1 -->
-          <div class="d-flex justify-content-center align-items-center col-12">
+          <div class="d-flex justify-content-center col-8">
+            <img src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4de5bc60-1808-11ed-bffb-334e1b7c5e2a" alt="" class="img-fluid" width="900px">
+          </div>
+          <div class="col-12 col-md-4">
             <p
               class="headline"
               data-aos="fade-up"
@@ -589,10 +598,6 @@
               data-aos-anchor="#section4-row1"
               data-aos-anchor-placement="top-bottom"
             >
-              Flex your photo skills
-              Flex your photo skills
-              Flex your photo skills
-              Flex your photo skills
               Flex your photo skills
             </p>
           </div>
@@ -626,7 +631,7 @@
         autoplay: true,
         centerMode: false,
         variableWidth: true,
-        autoplaySpeed: 2500
+        autoplaySpeed: 2500,
       });
 
       $(".slick-dots").appendTo("#scheme");
