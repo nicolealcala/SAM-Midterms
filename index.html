@@ -35,13 +35,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
 
-    <!-- Animate CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
+      html{
+        scroll-behavior: smooth;
+      }
       :root {
         --animate-delay: 0.5s;
       }
@@ -130,9 +130,6 @@
         font-weight: 700;
       }
 
-      .section1 {
-        width: auto;
-      }
       .section1img {
         width: 800px;
       }
@@ -199,7 +196,7 @@
     </style>
   </head>
   <body id="pageTop">
-    <!-- <nav id="mainNav" class="navbar navbar-expanded-lg">
+    <nav id="mainNav" class="navbar navbar-expanded-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
@@ -237,7 +234,7 @@
           </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
 
     <header>
       <div class="container-fluid">
@@ -246,7 +243,10 @@
             <div>
               <span
                 id="subTxt"
-                class="animate__lightSpeedInLeft"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-delay="100"
+                data-aos-duration="5000"
                 >Galaxy Z Flip4</span
               >
               <h1 id="mainTxt">Unfold your world</h1>
@@ -270,10 +270,11 @@
         </div>
       </div>
     </header>
+
     <!-- Part 1 -->
     <section>
       <div class="container-fluid">
-        <div class="row d-flex align-items-center mx-0">
+        <div id="section1-row1" class="row d-flex align-items-center mx-0">
           <div class="col-12">
             <span class="marker">01</span>
           </div>
@@ -281,7 +282,14 @@
           <div
             class="d-flex justify-content-center align-items-center col-12 col-md-6"
           >
-            <div class="txt">
+            <div
+              class="txt"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-delay="150"
+              data-aos-duration="5000"
+              data-aos-anchor=".carousel"
+            >
               <span class="category">COLOURS</span>
               <br />
               <br />
@@ -297,8 +305,16 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-center align-items-center col-12 col-md-6">
-            <div class="carousel">
+          <div
+            class="d-flex justify-content-center align-items-center col-12 col-md-6"
+          >
+            <div
+              class="carousel"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-delay="150"
+              data-aos-duration="5000"
+            >
               <div class="section1">
                 <h4 class="colorsTxt" style="color: #7c96d9">BLUE</h4>
                 <img
@@ -337,17 +353,32 @@
         </div>
 
         <div class="row mx-0" style="margin: 150px auto">
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-md-6">
             <img
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-delay="100"
+              data-aos-duration="5000"
+              data-aos-anchor="#section1-row1"
+              data-aos-anchor-placement="bottom-center"
               src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_compact_img.jpg"
               alt="Samsung Glaxy Z Flip 4 Compact Size"
               class="img-fluid position-absolute"
             />
           </div>
           <div
-            class="d-flex justify-content-end align-items-center col-12 col-md-5"
+            class="d-flex justify-content-end align-items-center col-12 col-md-6"
           >
-            <div class="txt" style="text-align: right; width: 85%; margin: 150px 0">
+            <div
+              class="txt"
+              style="text-align: right; width: 85%; margin: 150px 0"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-delay="100"
+              data-aos-duration="5000"
+              data-aos-anchor="#section1-row1"
+              data-aos-anchor-placement="bottom-center"
+            >
               <span class="category">COMPACT SIZE</span>
               <br />
               <p class="headline">Fits all your fits</p>
@@ -366,22 +397,30 @@
     </section>
 
     <!-- Part 2 -->
-    <section style="background-color: #101010">
+    <section id="section2" style="background-color: #101010;">
       <div class="container-fluid">
-        <div class="row d-flex align-items-center mx-0">
+        <div id="section2-row1" class="row d-flex align-items-center mx-0">
           <div class="col-12">
             <span class="marker" style="color: white">02</span>
-            <i class="fa-solid fa-dash"></i>
           </div>
 
           <div class="d-flex align-items-center col-12 col-md-4">
-            <div class="txt" style="text-align: left; width: 85%">
+            <div
+              class="txt"
+              style="text-align: left; width: 85%"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-delay="150"
+              data-aos-duration="5000"
+              data-aos-anchor="#section2"
+              data-aos-anchor-placement="top-top"
+            >
               <p class="headline" style="color: white">
                 Withstands drips and drops
               </p>
               <br />
               <br />
-              <span class="category" style="color: #e9e9e9"
+              <span class="category" style="color: white"
                 >IPX8 WATER RESISTANCE</span
               >
               <br />
@@ -399,17 +438,138 @@
               src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section2-water.png?raw=true"
               alt=""
               class="img-fluid"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-delay="150"
+              data-aos-duration="5000"
+              data-aos-anchor="#section2"
+              data-aos-anchor-placement="top-top"
             />
           </div>
         </div>
 
-        <div class="row d-flex align-items-center mx-0">
-          <div class="col-">
+        <div class="row d-flex align-items-center mx-0" style="padding: 150px 0 50px 0">
+          <div class="col-12 col-md-6">
             <img
               src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4de5bc60-1808-11ed-bffb-334e1b7c5e2a"
               alt=""
               width="600px"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-delay="50"
+              data-aos-duration="5000"
+              data-aos-anchor="#section2-row1"
+              data-aos-anchor-placement="bottom-top"
             />
+          </div>
+          <div
+            class="d-flex justify-content-end align-items-center col-12 col-md-6"
+          >
+            <div
+              class="txt"
+              style="text-align: right; width: 83%"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-delay="50"
+              data-aos-duration="5000"
+              data-aos-anchor="#section2-row1"
+              data-aos-anchor-placement="bottom-top"
+            >
+              <p class="headline" style="color: white">
+                Holds up from flex to flat
+              </p>
+              <br />
+              <br />
+              <p class="details" style="color: #e9e9e9">
+                The <b style="color: white">6.7-inch display</b> unfolds a
+                beautiful view thanks to Ultra Thin Glass. Advanced durability
+                makes it stronger than ever — staying tough through
+                <b style="color: white">more than 200,000 folds</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 3 -->
+    <section id="section3">
+      <div class="container-fluid">
+        <div id="section3-row1" class="row mx-0" style="padding: 350px 0">
+          <div class="d-flex justify-content-center align-items-center col-12">
+            <p
+              class="headline"
+              style="font-size: 130px"
+              data-aos="zoom-out"
+              data-aos-delay="10"
+              data-aos-duration="5000"
+              data-aos-easing="ease-out-back"
+              data-aos-anchor="#section3"
+              data-aos-anchor-placement="top-top"
+            >
+              Flippin' strong
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center row mx-0">
+          <div class="col-12">
+            <video
+              autoplay
+              muted
+              playsinline
+              data-aos="zoom-in"
+              data-aos-easing="up"
+              data-aos-delay="200"
+              data-aos-duration="5000"
+              data-aos-anchor="#section3-row1"
+              data-aos-anchor-placement="bottom-center"
+              type="video/mp4"
+              placeholder="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/buy/Flip4_Carousel_GroupKV_PC.jpg?imwidth=1366"
+              src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/buy/Flip4_Carousel_AnimatedKV_PC.mp4"
+              width="100%"
+            ></video>
+          </div>
+          <div class="col-12" style="margin-top: 70px">
+            <p
+              class="details text-center"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-delay="150"
+              data-aos-duration="5000"
+              data-aos-anchor="#section3-row1"
+              data-aos-anchor-placement="bottom-center"
+            >
+              From the inside out, Galaxy Z Flip4 is made to be
+              <b>durable</b>. These are our toughest foldables ever with
+              exclusive <b>Corning® Gorilla® Glass Victus®+</b>. And the hinge
+              is protected by <b>Armor Aluminum</b> — our toughest aluminum
+              frame.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 4 -->
+    <section>
+      <div class="container-fluid">
+        <div id="section4-row1" class="row mx-0">
+          <div class="col-12">
+            <span class="marker">03</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center col-12">
+            <p
+              class="headline"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-delay="150"
+              data-aos-duration="5000"
+              data-aos-anchor="#section4-row1"
+              data-aos-anchor-placement="top-bottom"
+            >
+              Flex your photo skills
+            </p>
           </div>
         </div>
       </div>
@@ -427,7 +587,11 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script type="text/javascript">
+      AOS.init();
       $(".carousel").slick({
         dots: true,
         arrows: false,
@@ -441,6 +605,31 @@
       });
 
       $(".slick-dots").appendTo("#scheme");
+
+      window.addEventListener("load", videoScroll);
+      window.addEventListener("scroll", videoScroll);
+
+      function videoScroll() {
+        if (document.querySelectorAll("video[autoplay]").length > 0) {
+          var windowHeight = window.innerHeight,
+            videoEl = document.querySelectorAll("video[autoplay]");
+
+          for (var i = 0; i < videoEl.length; i++) {
+            var thisVideoEl = videoEl[i],
+              videoHeight = thisVideoEl.clientHeight,
+              videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+            if (
+              videoClientRect <= windowHeight - videoHeight * 0.5 &&
+              videoClientRect >= 0 - videoHeight * 0.5
+            ) {
+              thisVideoEl.play();
+            } else {
+              thisVideoEl.pause();
+            }
+          }
+        }
+      }
     </script>
   </body>
 </html>
