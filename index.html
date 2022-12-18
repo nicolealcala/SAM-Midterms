@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
-      html{
+      html {
         scroll-behavior: smooth;
       }
       :root {
@@ -111,7 +111,6 @@
 
       .carousel {
         width: 100%;
-        margin: auto;
       }
 
       .txt {
@@ -238,7 +237,7 @@
 
     <header>
       <div class="container-fluid">
-        <div class="row gx-5 d-flex my-5">
+        <div id="header-row" class="row gx-5 d-flex my-5">
           <div class="d-flex align-items-center col-12 col-md-5">
             <div>
               <span
@@ -246,7 +245,7 @@
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-delay="100"
-                data-aos-duration="5000"
+                data-aos-duration="600"
                 >Galaxy Z Flip4</span
               >
               <h1 id="mainTxt">Unfold your world</h1>
@@ -279,6 +278,7 @@
             <span class="marker">01</span>
           </div>
 
+          <!-- Section1-Text1 -->
           <div
             class="d-flex justify-content-center align-items-center col-12 col-md-6"
           >
@@ -286,9 +286,10 @@
               class="txt"
               data-aos="fade-up"
               data-aos-easing="linear"
-              data-aos-delay="150"
-              data-aos-duration="5000"
-              data-aos-anchor=".carousel"
+              data-aos-delay="1"
+              data-aos-duration="300"
+              data-aos-anchor="#header-row"
+              data-aos-anchor-placement="bottom-top"
             >
               <span class="category">COLOURS</span>
               <br />
@@ -305,6 +306,7 @@
             </div>
           </div>
 
+          <!-- Seciton1-Visual1 -->
           <div
             class="d-flex justify-content-center align-items-center col-12 col-md-6"
           >
@@ -312,8 +314,10 @@
               class="carousel"
               data-aos="fade-up"
               data-aos-easing="linear"
-              data-aos-delay="150"
-              data-aos-duration="5000"
+              data-aos-delay="1"
+              data-aos-duration="300"
+              data-aos-anchor="#header-row"
+              data-aos-anchor-placement="bottom-top"
             >
               <div class="section1">
                 <h4 class="colorsTxt" style="color: #7c96d9">BLUE</h4>
@@ -353,12 +357,13 @@
         </div>
 
         <div class="row mx-0" style="margin: 150px auto">
+          <!-- Section1-Img2 -->
           <div class="col-12 col-md-6">
             <img
               data-aos="fade-right"
               data-aos-easing="linear"
-              data-aos-delay="100"
-              data-aos-duration="5000"
+              data-aos-delay="1"
+              data-aos-duration="300"
               data-aos-anchor="#section1-row1"
               data-aos-anchor-placement="bottom-center"
               src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_compact_img.jpg"
@@ -366,6 +371,8 @@
               class="img-fluid position-absolute"
             />
           </div>
+
+          <!-- Section1-Text2 -->
           <div
             class="d-flex justify-content-end align-items-center col-12 col-md-6"
           >
@@ -374,8 +381,8 @@
               style="text-align: right; width: 85%; margin: 150px 0"
               data-aos="fade-up"
               data-aos-easing="linear"
-              data-aos-delay="100"
-              data-aos-duration="5000"
+              data-aos-delay="1"
+              data-aos-duration="300"
               data-aos-anchor="#section1-row1"
               data-aos-anchor-placement="bottom-center"
             >
@@ -397,21 +404,22 @@
     </section>
 
     <!-- Part 2 -->
-    <section id="section2" style="background-color: #101010;">
+    <section id="section2" style="background-color: #101010">
       <div class="container-fluid">
         <div id="section2-row1" class="row d-flex align-items-center mx-0">
           <div class="col-12">
             <span class="marker" style="color: white">02</span>
           </div>
 
-          <div class="d-flex align-items-center col-12 col-md-4">
+          <!-- Section2-Text1 -->
+          <div class="d-flex align-items-center col-12 col-md-6">
             <div
               class="txt"
               style="text-align: left; width: 85%"
               data-aos="fade-up"
               data-aos-easing="linear"
-              data-aos-delay="150"
-              data-aos-duration="5000"
+              data-aos-delay="1"
+              data-aos-duration="300"
               data-aos-anchor="#section2"
               data-aos-anchor-placement="top-top"
             >
@@ -433,22 +441,28 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-center col-12 col-md-8 p-5">
+          <!-- Section2-Img1 -->
+          <div class="d-flex justify-content-center col-12 col-md-6 p-5">
             <img
               src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section2-water.png?raw=true"
               alt=""
+              id="section2-img1"
               class="img-fluid"
               data-aos="fade-down"
               data-aos-easing="linear"
-              data-aos-delay="150"
-              data-aos-duration="5000"
+              data-aos-delay="1"
+              data-aos-duration="300"
               data-aos-anchor="#section2"
               data-aos-anchor-placement="top-top"
             />
           </div>
         </div>
 
-        <div class="row d-flex align-items-center mx-0" style="padding: 150px 0 50px 0">
+        <div
+          class="row d-flex align-items-center mx-0"
+          style="padding: 150px 0 50px 0"
+        >
+          <!-- Section2-Img2 -->
           <div class="col-12 col-md-6">
             <img
               src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4de5bc60-1808-11ed-bffb-334e1b7c5e2a"
@@ -456,12 +470,14 @@
               width="600px"
               data-aos="fade-right"
               data-aos-easing="linear"
-              data-aos-delay="50"
-              data-aos-duration="5000"
-              data-aos-anchor="#section2-row1"
-              data-aos-anchor-placement="bottom-top"
+              data-aos-delay="1"
+              data-aos-duration="300"
+              data-aos-anchor="#section2-img1"
+              data-aos-anchor-placement="bottom-center"
             />
           </div>
+
+          <!-- Section2-Text2 -->
           <div
             class="d-flex justify-content-end align-items-center col-12 col-md-6"
           >
@@ -470,10 +486,10 @@
               style="text-align: right; width: 83%"
               data-aos="fade-left"
               data-aos-easing="linear"
-              data-aos-delay="50"
-              data-aos-duration="5000"
-              data-aos-anchor="#section2-row1"
-              data-aos-anchor-placement="bottom-top"
+              data-aos-delay="1"
+              data-aos-duration="300"
+              data-aos-anchor="#section2-img1"
+              data-aos-anchor-placement="bottom-center"
             >
               <p class="headline" style="color: white">
                 Holds up from flex to flat
@@ -495,14 +511,15 @@
     <!-- Part 3 -->
     <section id="section3">
       <div class="container-fluid">
-        <div id="section3-row1" class="row mx-0" style="padding: 350px 0">
+        <div id="section3-row1" class="row mx-0" style="padding: 370px 0 350px 0">
+          <!-- Section3-Text1 -->
           <div class="d-flex justify-content-center align-items-center col-12">
             <p
               class="headline"
               style="font-size: 130px"
               data-aos="zoom-out"
-              data-aos-delay="10"
-              data-aos-duration="5000"
+              data-aos-delay="1"
+              data-aos-duration="500"
               data-aos-easing="ease-out-back"
               data-aos-anchor="#section3"
               data-aos-anchor-placement="top-top"
@@ -513,6 +530,7 @@
         </div>
 
         <div class="d-flex justify-content-center align-items-center row mx-0">
+          <!-- Section3-Vid1 -->
           <div class="col-12">
             <video
               autoplay
@@ -520,8 +538,8 @@
               playsinline
               data-aos="zoom-in"
               data-aos-easing="up"
-              data-aos-delay="200"
-              data-aos-duration="5000"
+              data-aos-delay="100"
+              data-aos-duration="1000"
               data-aos-anchor="#section3-row1"
               data-aos-anchor-placement="bottom-center"
               type="video/mp4"
@@ -530,13 +548,15 @@
               width="100%"
             ></video>
           </div>
+
+          <!-- Section3-Text2 -->
           <div class="col-12" style="margin-top: 70px">
             <p
               class="details text-center"
               data-aos="fade-up"
               data-aos-easing="linear"
-              data-aos-delay="150"
-              data-aos-duration="5000"
+              data-aos-delay="5"
+              data-aos-duration="300"
               data-aos-anchor="#section3-row1"
               data-aos-anchor-placement="bottom-center"
             >
@@ -553,21 +573,26 @@
 
     <!-- Part 4 -->
     <section>
-      <div class="container-fluid">
-        <div id="section4-row1" class="row mx-0">
+      <div class="container-fluid" style="background-color: pink; overflow: hidden">
+        <div id="section4-row1" class="row mx-0" style="overflow: auto">
           <div class="col-12">
             <span class="marker">03</span>
           </div>
+          <!-- Section4-Text1 -->
           <div class="d-flex justify-content-center align-items-center col-12">
             <p
               class="headline"
               data-aos="fade-up"
               data-aos-easing="linear"
-              data-aos-delay="150"
-              data-aos-duration="5000"
+              data-aos-delay="5"
+              data-aos-duration="500"
               data-aos-anchor="#section4-row1"
               data-aos-anchor-placement="top-bottom"
             >
+              Flex your photo skills
+              Flex your photo skills
+              Flex your photo skills
+              Flex your photo skills
               Flex your photo skills
             </p>
           </div>
@@ -596,12 +621,12 @@
         dots: true,
         arrows: false,
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         centerMode: false,
         variableWidth: true,
-        autoplaySpee: 2000,
+        autoplaySpeed: 2500
       });
 
       $(".slick-dots").appendTo("#scheme");
