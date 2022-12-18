@@ -35,7 +35,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
 
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <style>
+      :root {
+        --animate-delay: 0.5s;
+      }
+
       * {
         color: #303030;
       }
@@ -52,16 +62,18 @@
         width: auto;
         background-position: center center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         background-size: cover;
         padding: 170px 0;
       }
 
       .container-fluid {
-        width: 75%;
+        max-width: 1500px;
       }
 
-      #mainTxt, .marker, .headline {
+      #mainTxt,
+      .marker,
+      .headline {
         font-family: "Plus Jakarta Sans";
         font-weight: 700;
         font-size: 70px;
@@ -74,7 +86,8 @@
         font-size: 30px;
       }
 
-      #buyBtn, .category {
+      #buyBtn,
+      .category {
         background-color: #b07af4;
         color: white;
         font-family: "Barlow Condensed";
@@ -98,7 +111,7 @@
 
       .carousel {
         width: 100%;
-        display: flex;
+        margin: auto;
       }
 
       .txt {
@@ -108,7 +121,7 @@
       .details,
       .colorsTxt {
         font-family: "Plus Jakarta Sans";
-        font-size: 24px;
+        font-size: 22px;
       }
 
       .colorsTxt {
@@ -124,10 +137,15 @@
         width: 800px;
       }
 
+      .position-absolute {
+        left: 0;
+        top: auto;
+      }
+
       .slick-slide {
-        margin: auto 70px;
-        display: flex;
-        justify-content: end;
+        /* display: flex;
+        justify-content:end; */
+        padding-left: 50px;
       }
 
       .slick-dots {
@@ -152,7 +170,7 @@
         border-radius: 100%;
         background-color: #aecbf3;
         content: "";
-        opacity: 0.5;
+        opacity: 0.55;
       }
 
       .slick-active > #slick-slide-control00::before,
@@ -171,7 +189,7 @@
       }
 
       #slick-slide-control03::before {
-        background-color: #fcdac3;
+        background-color: #fed1b2;
       }
 
       /* Section 2 */
@@ -181,7 +199,7 @@
     </style>
   </head>
   <body id="pageTop">
-    <nav id="mainNav" class="navbar navbar-expanded-lg fixed-top">
+    <!-- <nav id="mainNav" class="navbar navbar-expanded-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
@@ -219,14 +237,18 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <header>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row gx-5 d-flex my-5">
           <div class="d-flex align-items-center col-12 col-md-5">
             <div>
-              <span id="subTxt">Galaxy Z Flip4</span>
+              <span
+                id="subTxt"
+                class="animate__lightSpeedInLeft"
+                >Galaxy Z Flip4</span
+              >
               <h1 id="mainTxt">Unfold your world</h1>
               <button
                 id="buyBtn"
@@ -250,14 +272,14 @@
     </header>
     <!-- Part 1 -->
     <section>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row d-flex align-items-center mx-0">
           <div class="col-12">
-            <span class="marker">01</span> <i class="fa-solid fa-dash"></i>
+            <span class="marker">01</span>
           </div>
 
           <div
-            class="d-flex justify-content-center align-items-center col-12 col-md-5"
+            class="d-flex justify-content-center align-items-center col-12 col-md-6"
           >
             <div class="txt">
               <span class="category">COLOURS</span>
@@ -275,7 +297,7 @@
             </div>
           </div>
 
-          <div class="d-flex align-items-center col-12 col-md-7">
+          <div class="d-flex justify-content-center align-items-center col-12 col-md-6">
             <div class="carousel">
               <div class="section1">
                 <h4 class="colorsTxt" style="color: #7c96d9">BLUE</h4>
@@ -319,13 +341,13 @@
             <img
               src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_compact_img.jpg"
               alt="Samsung Glaxy Z Flip 4 Compact Size"
-              class="img-fluid"
+              class="img-fluid position-absolute"
             />
           </div>
           <div
             class="d-flex justify-content-end align-items-center col-12 col-md-5"
           >
-            <div class="txt" style="text-align: right; width: 85%">
+            <div class="txt" style="text-align: right; width: 85%; margin: 150px 0">
               <span class="category">COMPACT SIZE</span>
               <br />
               <p class="headline">Fits all your fits</p>
@@ -343,19 +365,51 @@
       </div>
     </section>
 
+    <!-- Part 2 -->
     <section style="background-color: #101010">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row d-flex align-items-center mx-0">
           <div class="col-12">
-            <span class="marker" style="color: white">02</span> <i class="fa-solid fa-dash"></i>
+            <span class="marker" style="color: white">02</span>
+            <i class="fa-solid fa-dash"></i>
           </div>
 
           <div class="d-flex align-items-center col-12 col-md-4">
-            <p class="headline" style="color: white">Withstands drips and drops</p>
+            <div class="txt" style="text-align: left; width: 85%">
+              <p class="headline" style="color: white">
+                Withstands drips and drops
+              </p>
+              <br />
+              <br />
+              <span class="category" style="color: #e9e9e9"
+                >IPX8 WATER RESISTANCE</span
+              >
+              <br />
+              <br />
+              <p class="details" style="color: #e9e9e9">
+                Water you worried about? Water-resistant foldable smartphones.
+                It can hang out in <b style="color: white">1.5 meters</b> of
+                water for up to 30 minutes without breaking a sweat.
+              </p>
+            </div>
           </div>
 
-          <div class="col-12 col-md-8">
-            <img src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_durability_top.jpg" alt="" class="img-fluid">
+          <div class="d-flex justify-content-center col-12 col-md-8 p-5">
+            <img
+              src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section2-water.png?raw=true"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="row d-flex align-items-center mx-0">
+          <div class="col-">
+            <img
+              src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4de5bc60-1808-11ed-bffb-334e1b7c5e2a"
+              alt=""
+              width="600px"
+            />
           </div>
         </div>
       </div>
@@ -381,7 +435,7 @@
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        centerMode: true,
+        centerMode: false,
         variableWidth: true,
         autoplaySpee: 2000,
       });
