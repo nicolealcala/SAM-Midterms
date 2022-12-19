@@ -1122,11 +1122,10 @@
     <script type="text/javascript">
       //AOS
       AOS.init();
-
-      jQuery(document).ready(function(){
-        $(".carousel").slick({
+      
+      $(".carousel").slick({
         dots: true,
-        arrows: false,
+        // arrows: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -1136,9 +1135,10 @@
         autoplaySpeed: 2500,
       });
 
-      })
       //Slick
-      $(".slick-dots").appendTo("#scheme");
+      $(document).ready(function(){
+        $(".slick-dots").appendTo("#scheme");
+      });
 
       //Video Play
       window.addEventListener("load", videoScroll);
