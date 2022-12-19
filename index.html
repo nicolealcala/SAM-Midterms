@@ -71,12 +71,13 @@
       }
 
       #header2 {
-        background-image: url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
+        background: linear-gradient(rgba(31, 61, 111, 0.5), rgb(72,0,72,0.3)), url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
+        background-position: center center;
         background-attachment: fixed;
       }
 
       .container-fluid {
-        max-width: 1550px;
+        max-width: 80%;
       }
 
       #mainTxt,
@@ -258,8 +259,12 @@
         width: 80%;
       }
 
-      #flippin {
+      #flippin, #build-txt {
         font-size: 130px;
+      }
+
+      #build-txt {
+        color: white;
       }
 
       #section3-row1 {
@@ -277,13 +282,13 @@
 
       .feature-category {
         font-family: "Barlow Condensed";
-        color: rgb(255, 239, 133);
+        color: rgb(252, 239, 152);
         font-size: 40px;
         font-weight: 500;
       }
 
       .feature-details,
-      .feature-subtitle {
+      .feature-subtitle, .p-details  {
         color: #bfbfbf;
         font-family: "Plus Jakarta Sans";
         font-size: 22px;
@@ -296,6 +301,19 @@
 
       .feature-txt {
         width: 60%;
+      }
+
+      #dark-category, .p-details {
+        color: #303030;
+      }
+
+      .p-details {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      #header3 {
+        background-image: url('https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dba1880-1808-11ed-bffa-50adc1e7b4fe')
       }
     </style>
   </head>
@@ -657,7 +675,7 @@
                 id="flippin"
                 class="headline"
                 data-aos="zoom-out"
-                data-aos-delay="1"
+                data-aos-delay="0"
                 data-aos-duration="500"
                 data-aos-easing="ease-out-back"
                 data-aos-anchor="#section3"
@@ -1027,15 +1045,62 @@
           </div>
         </div>
       </header>
-      
+
       <section id="features-s1">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row mx-0">
             <div class="d-flex justify-content-center col-12">
-              <h1 class="headline"></h1>
+              <h1 class="headline">Performance</h1>
+            </div>
+          </div>
+
+          <div class="row mx-0">
+            <div class="d-flex justify-content-center align-items-center col-4">
+              <div class="feature-txt text-center">
+                <p id="dark-category"  class="feature-category">
+                  AnTuTu
+                </p>
+                <p class="p-details">685754 (v8) | 800001 (v9)</p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center col-4">
+              <div class="feature-txt text-center">
+                <p id="dark-category" class="feature-category">
+                  GeekBench
+                </p>
+                <p class="p-details">
+                3913 (v5.1)</p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center col-4">
+              <div class="feature-txt text-center">
+                <p id="dark-category" class="feature-category">
+                  GFXBench
+                </p>
+                <p class="p-details">74fps (ES 3.1 onscreen)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div id="build">
+      <header id="header3">
+        <div class="container-fluid">
+          <div id="build" class="row">
+            <div class="col-12">
+              <p id="build-txt" class="headline text-center">Build</p>
             </div>
           </div>
         </div>
+      </header>
+
+      <section id="build-s1">
+        <div class="container-fluid"></div>
       </section>
     </div>
 
@@ -1057,7 +1122,9 @@
     <script type="text/javascript">
       //AOS
       AOS.init();
-      $(".carousel").slick({
+
+      jQuery(document).ready(function(){
+        $(".carousel").slick({
         dots: true,
         arrows: false,
         infinite: true,
@@ -1069,6 +1136,7 @@
         autoplaySpeed: 2500,
       });
 
+      })
       //Slick
       $(".slick-dots").appendTo("#scheme");
 
