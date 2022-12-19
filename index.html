@@ -71,7 +71,8 @@
       }
 
       #header2 {
-        background: linear-gradient(rgba(31, 61, 111, 0.5), rgb(72,0,72,0.3)), url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
+        background: linear-gradient(rgba(31, 61, 111, 0.5), rgb(72, 0, 72, 0.3)),
+          url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
         background-position: center center;
         background-attachment: fixed;
       }
@@ -201,24 +202,22 @@
         z-index: 1;
       }
 
-      .slick-slide {
-        /* display: flex;
-        justify-content:end; */
+      /* .slick-slide {
         padding-left: 50px;
-      }
+      } */
 
-      .slick-dots {
+      /* .slick-dots {
         display: flex;
         justify-content: start;
         position: relative;
         bottom: 0;
-      }
+      } */
 
-      .slick-dots li {
+      /* .slick-dots li {
         margin: 0 35px 0 0;
-      }
+      } */
 
-      #slick-slide-control00::before,
+      /* #slick-slide-control00::before,
       #slick-slide-control01::before,
       #slick-slide-control02::before,
       #slick-slide-control03::before {
@@ -228,25 +227,57 @@
         background-color: #aecbf3;
         content: "";
         opacity: 0.55;
+      } */
+      
+      .indicator {
+        border-radius: 100%;
+        background-color: #aecbf3;
+        content: "";
+        margin: 0 5px 0 0;   
+        opacity: 0.55;
       }
 
-      .slick-active > #slick-slide-control00::before,
-      .slick-active > #slick-slide-control01::before,
-      .slick-active > #slick-slide-control02::before,
-      .slick-active > #slick-slide-control03::before {
-        opacity: 1;
+      #slide-blue {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        background-color: #aecbf3;
       }
-
-      #slick-slide-control01::before {
+      #slide-graphite {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
         background-color: #757c83;
       }
 
-      #slick-slide-control02::before {
+      #slide-purple {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
         background-color: #b292c7;
       }
 
-      #slick-slide-control03::before {
+      #slide-pink {
+        width: 50px;
+        height: 50px;
         background-color: #fed1b2;
+      }
+      #slide-blue,
+      #slide-graphite,
+      #slide-purple,
+      #slide-pink {
+        opacity: 0.4;
+      }
+      .active > #slide-blue, 
+      .active > #slide-graphite,
+      .active > #slide-purple,
+      .active > #slide-pink{
+        opacity: 1;
+      }
+
+      .carousel-indicators {
+        width: 100%;
+        position: relative;
       }
 
       .row {
@@ -259,7 +290,8 @@
         width: 80%;
       }
 
-      #flippin, #build-txt {
+      #flippin,
+      #build-txt {
         font-size: 130px;
       }
 
@@ -288,7 +320,8 @@
       }
 
       .feature-details,
-      .feature-subtitle, .p-details  {
+      .feature-subtitle,
+      .p-details {
         color: #bfbfbf;
         font-family: "Plus Jakarta Sans";
         font-size: 22px;
@@ -303,7 +336,8 @@
         width: 60%;
       }
 
-      #dark-category, .p-details {
+      #dark-category,
+      .p-details {
         color: #303030;
       }
 
@@ -313,7 +347,7 @@
       }
 
       #header3 {
-        background-image: url('https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dba1880-1808-11ed-bffa-50adc1e7b4fe')
+        background-image: url("https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dba1880-1808-11ed-bffa-50adc1e7b4fe");
       }
     </style>
   </head>
@@ -443,7 +477,41 @@
                 </p>
 
                 <div class="py-4" id="scheme">
-                  <!-- Appended Slick Controller -->
+                  <div class="d-flex justify-content-start carousel-indicators m-0">
+                    <button
+                    id="slide-blue"
+                      type="button"
+                      data-bs-target="#ele-carousel"
+                      data-bs-slide-to="0"
+                      class="active indicator"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                    id="slide-graphite"
+                      type="button"
+                      data-bs-target="#ele-carousel"
+                      data-bs-slide-to="1"
+                      class="indicator"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                    id="slide-purple"
+                      type="button"
+                      data-bs-target="#ele-carousel"
+                      data-bs-slide-to="2"
+                      class="indicator"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                    id="slide-pink"
+                      type="button"
+                      data-bs-target="#ele-carousel"
+                      data-bs-slide-to="3"
+                      class="indicator"
+                      aria-label="Slide 4"
+                    ></button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -453,6 +521,73 @@
               class="d-flex justify-content-center align-items-center col-12 col-md-6"
             >
               <div
+              id="ele-carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+                data-aos-anchor="#header-row"
+                data-aos-anchor-placement="bottom-top"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#ele-carousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#ele-carousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <!-- <div
                 class="carousel"
                 data-aos="fade-up"
                 data-aos-easing="linear"
@@ -494,7 +629,7 @@
                     class="section1-img"
                   />
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -1057,33 +1192,25 @@
           <div class="row mx-0">
             <div class="d-flex justify-content-center align-items-center col-4">
               <div class="feature-txt text-center">
-                <p id="dark-category"  class="feature-category">
-                  AnTuTu
-                </p>
+                <p id="dark-category" class="feature-category">AnTuTu</p>
                 <p class="p-details">685754 (v8) | 800001 (v9)</p>
               </div>
             </div>
 
             <div class="d-flex justify-content-center align-items-center col-4">
               <div class="feature-txt text-center">
-                <p id="dark-category" class="feature-category">
-                  GeekBench
-                </p>
-                <p class="p-details">
-                3913 (v5.1)</p>
+                <p id="dark-category" class="feature-category">GeekBench</p>
+                <p class="p-details">3913 (v5.1)</p>
               </div>
             </div>
 
             <div class="d-flex justify-content-center align-items-center col-4">
               <div class="feature-txt text-center">
-                <p id="dark-category" class="feature-category">
-                  GFXBench
-                </p>
+                <p id="dark-category" class="feature-category">GFXBench</p>
                 <p class="p-details">74fps (ES 3.1 onscreen)</p>
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </div>
@@ -1122,23 +1249,23 @@
     <script type="text/javascript">
       //AOS
       AOS.init();
-      
-      $(".carousel").slick({
-        dots: true,
-        // arrows: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        centerMode: false,
-        variableWidth: true,
-        autoplaySpeed: 2500,
-      });
+
+      // $(".carousel").slick({
+      //   dots: true,
+      //   // arrows: false,
+      //   infinite: true,
+      //   slidesToShow: 1,
+      //   slidesToScroll: 1,
+      //   autoplay: true,
+      //   centerMode: false,
+      //   variableWidth: true,
+      //   autoplaySpeed: 2500,
+      // });
 
       //Slick
-      $(document).ready(function(){
-        $(".slick-dots").appendTo("#scheme");
-      });
+      // $(document).ready(function () {
+      //   $(".slick-dots").appendTo("#scheme");
+      // });
 
       //Video Play
       window.addEventListener("load", videoScroll);
