@@ -59,9 +59,10 @@
         margin: 0 50px;
       }
 
-      header, #header2 {
+      header,
+      #header2 {
         width: auto;
-        background-image: url('https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme1.png?raw=true');
+        background-image: url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme1.png?raw=true");
         background-position: center center;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
@@ -71,6 +72,7 @@
 
       #header2 {
         background-image: url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
+        background-attachment: fixed;
       }
 
       .container-fluid {
@@ -79,13 +81,18 @@
 
       #mainTxt,
       .marker,
-      .headline {
+      .headline,
+      .white-headline {
+        color: #303030;
         font-family: "Plus Jakarta Sans";
         font-weight: 700;
         font-size: 70px;
         line-height: 75px;
       }
 
+      .white-headline {
+        color: white;
+      }
       #subTxt {
         font-family: "Poppins";
         font-weight: 300;
@@ -126,6 +133,7 @@
       }
 
       .marker {
+        color: #303030;
         font-size: 50px;
       }
 
@@ -143,15 +151,27 @@
       }
 
       .details,
-      .colorsTxt {
+      .colorsTxt,
+      .white-details {
+        color: #303030;
         font-family: "Plus Jakarta Sans";
         font-size: 22px;
+      }
+
+      .white-details {
+        color: white;
       }
 
       .colorsTxt {
         max-width: 100%;
         font-size: 20px;
         font-weight: 700;
+      }
+
+      .white-marker,
+      .white-category,
+      .white-bold {
+        color: white;
       }
 
       #color-blue {
@@ -233,25 +253,22 @@
       }
 
       #section1-txt1,
-      #section2-txt1, #section2-txt2 {
+      #section2-txt1,
+      #section2-txt2 {
         width: 80%;
       }
 
-      .white-marker, .white-headline
-      .white-category, .white-bold {
-        color: white;
-      }
-
       #flippin {
-        font-size: 130px
+        font-size: 130px;
       }
 
       #section3-row1 {
         padding: 350px 0;
       }
 
-      #section3-row2, #section3-details1 {
-        padding: 100px;
+      #section3-row2,
+      #section3-details1 {
+        padding: 100px 0;
       }
 
       #section3-details1 {
@@ -260,15 +277,25 @@
 
       .feature-category {
         font-family: "Barlow Condensed";
-        color: white;
+        color: rgb(255, 239, 133);
         font-size: 40px;
         font-weight: 500;
       }
-      
-      .featureTxt {
+
+      .feature-details,
+      .feature-subtitle {
+        color: #bfbfbf;
         font-family: "Plus Jakarta Sans";
         font-size: 22px;
-        color: #bfbfbf"
+      }
+
+      .feature-subtitle {
+        color: white;
+        font-size: 22px;
+      }
+
+      .feature-txt {
+        width: 60%;
       }
     </style>
   </head>
@@ -527,9 +554,7 @@
                 data-aos-anchor="#section2"
                 data-aos-anchor-placement="top-top"
               >
-                <p class="headline white-headline">
-                  Withstands drips and drops
-                </p>
+                <p class="white-headline">Withstands drips and drops</p>
                 <br />
                 <br />
                 <span class="category white-category"
@@ -537,7 +562,7 @@
                 >
                 <br />
                 <br />
-                <p class="details whitesmoke-details">
+                <p class="white-details">
                   Water you worried about? Water-resistant foldable smartphones.
                   It can hang out in <b class="white-bold">1.5 meters</b> of
                   water for up to 30 minutes without breaking a sweat.
@@ -568,7 +593,7 @@
               <img
                 src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section2-img2.png?raw=true"
                 alt=""
-                width="600px"
+                width="100%"
                 data-aos="fade-right"
                 data-aos-easing="linear"
                 data-aos-delay="1"
@@ -592,10 +617,10 @@
                 data-aos-anchor="#section2-img1"
                 data-aos-anchor-placement="bottom-center"
               >
-                <p class="headline whit-headline">Holds up from flex to flat</p>
+                <p class="white-headline">Holds up from flex to flat</p>
                 <br />
                 <br />
-                <p class="details whitesmoke-details">
+                <p class="white-details">
                   The <b class="white-bold">6.7-inch display</b> unfolds a
                   beautiful view thanks to Ultra Thin Glass. Advanced durability
                   makes it stronger than ever — staying tough through
@@ -653,6 +678,7 @@
                 autoplay
                 muted
                 playsinline
+                width="100%"
                 data-aos="zoom-in"
                 data-aos-easing="up"
                 data-aos-delay="100"
@@ -706,7 +732,9 @@
               >
             </div>
             <!-- Section4-Img1 -->
-            <div class="d-flex justify-content-center align-items-center col-12 col-md-6">
+            <div
+              class="d-flex justify-content-center align-items-center col-12 col-md-6"
+            >
               <img
                 src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_flexcam_cam.png"
                 alt=""
@@ -722,7 +750,9 @@
             </div>
 
             <!-- Section4-Txt1 -->
-            <div class="d-flex justify-content-end align-items-center col-12 col-md-6">
+            <div
+              class="d-flex justify-content-end align-items-center col-12 col-md-6"
+            >
               <div
                 class="txt"
                 data-aos="fade-down"
@@ -799,18 +829,214 @@
     <div id="features">
       <header id="header2">
         <div class="container-fluid">
-          <div id="header2-row" class="row mx-0">
-            <div class="d-flex justify-content-center col-12 col-md-3">
-              <div class="txt">
+          <div id="header2-row1" class="row mx-0 gy-4">
+            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="zoom-in-right"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">NETWORK</span>
+                <p class="feature-details">
+                  <b class="feature-subtitle">No. of Sim</b><br />
+                  Dual Sim <br />
+                  <br />
+                  <b class="feature-subtitle">Infra</b><br />
+                  2G GSM, 3G WCDMA, 4G LTE FDD, 4G LTE TDD, 5G Sub6 FDD, 5G Sub6
+                  TDD
+                  <br />
+                  <br />
+                  <b class="feature-subtitle">3G UMTS</b><br />
+                  B1 (2100), B2 (1900), B4 (AWS), B5 (850), B8 (900)
+                  <br />
+                  <br />
+                  <b class="feature-subtitle">4G TDD LTE</b><br />
+                  B38 (2600), B39 (1900), B40 (2300), B41 (2500)
+                  <br />
+                  <br />
+                  <b class="feature-subtitle">5G TDD Sub6</b><br />
+                  N38 (2600), N40 (2300), N41 (2500), N77 (3700), N78 (3500)
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="zoom-in-left"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">CONNECTIVITY</span>
+                <p class="feature-details">
+                  <b class="feature-subtitle">USB Interface</b><br />
+                  USB Type-C<br />
+                  <br />
+                  <b class="feature-subtitle">Location Technology</b><br />
+                  GPS, Glonass, Beidou, Galileo, QZSS
+                  <br />
+                  <br />
+                  <b class="feature-subtitle">MHL</b><br />
+                  No
+                  <br />
+                  <br />
+                  <b class="feature-subtitle">Wi-Fi Direct</b><br />
+                  Yes
+                  <br />
+                  <br />
+                  <b class="feature-subtitle">NFC</b><br />
+                  Yes
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
                 <span class="feature-category">OPERATING SYSTEM</span>
-                <p class="featureTxt">
+                <p class="feature-details">
                   Android 12, upgradable to Android 13, One UI 5
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">CHIPSET</span>
+                <p class="feature-details">
+                  Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">CPU</span>
+                <p class="feature-details">
+                  Octa-core (1x3.19 GHz Cortex-X2 & 3x2.75 GHz Cortex-A710 &
+                  4x1.80 GHz Cortex-A510)
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">GPU</span>
+                <p class="feature-details">Adreno 730</p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">MEMORY</span>
+                <p class="feature-details">
+                  128GB 8GB RAM<br />
+                  256GB 8GB RAM <br />
+                  512GB 8GB RAM
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">AUDIO AND VIDEO</span>
+                <p class="feature-details">
+                  <b>Stereo Support</b><br />
+                  Yes<br /><br />
+                  <b>Video Playing Resolution</b><br />
+                  UHD 8K (7680 x 4320) @ 60fps
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">SENSORS</span>
+                <p class="feature-details">
+                  Fingerprint (side-mounted)<br />
+                  Accelerometer<br />
+                  Gyro<br />
+                  Proximity<br />
+                  Compass<br />
+                  Barometer<br />
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
+              <div
+                class="feature-txt"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-delay="1"
+                data-aos-duration="300"
+              >
+                <span class="feature-category">BATTERY</span>
+                <p class="feature-details">
+                  Li-Po 3700 mAh, non-removable<br />
+                  25W wired, 50% in 30 min (advertised)<br />
+                  15W wireless<br />
+                  4.5W reverse wireless
                 </p>
               </div>
             </div>
           </div>
         </div>
       </header>
+
+      <section id="features-s1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="d-flex justify-content-center col-12">
+              <h1 class="headline"></h1>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Bootstrap JS -->
