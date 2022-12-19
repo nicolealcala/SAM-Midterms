@@ -47,10 +47,6 @@
         --animate-delay: 0.5s;
       }
 
-      * {
-        color: #303030;
-      }
-
       #mainNav {
         background-color: white;
       }
@@ -134,6 +130,7 @@
       }
 
       .category {
+        color: #303030;
         font-size: 20px;
         font-family: "Barlow Condensed";
         font-weight: 500;
@@ -231,11 +228,6 @@
         background-color: #fed1b2;
       }
 
-      /* Section 2 */
-      .headline {
-        font-size: 70px;
-      }
-
       .row {
         padding: 50px 0;
       }
@@ -248,10 +240,6 @@
       .white-marker, .white-headline
       .white-category, .white-bold {
         color: white;
-      }
-
-      .whitesmoke-details {
-        color: #bfbfbf"
       }
 
       #flippin {
@@ -268,6 +256,19 @@
 
       #section3-details1 {
         width: 80%;
+      }
+
+      .feature-category {
+        font-family: "Barlow Condensed";
+        color: white;
+        font-size: 40px;
+        font-weight: 500;
+      }
+      
+      .featureTxt {
+        font-family: "Plus Jakarta Sans";
+        font-size: 22px;
+        color: #bfbfbf"
       }
     </style>
   </head>
@@ -799,11 +800,13 @@
       <header id="header2">
         <div class="container-fluid">
           <div id="header2-row" class="row mx-0">
-            <div class="d-flex justify-content-center col-12">
-              <img
-                src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/header-img2.png?raw=true"
-                alt=""
-              />
+            <div class="d-flex justify-content-center col-12 col-md-3">
+              <div class="txt">
+                <span class="feature-category">OPERATING SYSTEM</span>
+                <p class="featureTxt">
+                  Android 12, upgradable to Android 13, One UI 5
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -868,28 +871,6 @@
           }
         }
       }
-
-      //Nav Click Highlights
-      $("#link-highlights").click(function () {
-        $("#link-highlights").addClass("active");
-        $("#highlights").removeClass("d-none");
-        $("#features").addClass("d-none");
-        $("#build").addClass("d-none");
-      });
-      //Nav Click Features
-      $("#link-features").click(function () {
-        $("#link-features").addClass("active");
-        $("#features").removeClass("d-none");
-        $("#highlights").addClass("d-none");
-        $("#build").addClass("d-none");
-      });
-      //Nav Click Build
-      $("#link-build").click(function () {
-        $("#link-build").addClass("active");
-        $("#build").removeClass("d-none");
-        $("#highlights").addClass("d-none");
-        $("#features").addClass("d-none");
-      });
     </script>
   </body>
 </html>
