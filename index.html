@@ -63,13 +63,17 @@
         margin: 0 50px;
       }
 
-      header {
+      header, #header2 {
         width: auto;
         background-position: center center;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
         background-size: cover;
         padding: 170px 0;
+      }
+
+      #header2 {
+        background-image: url(https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true);
       }
 
       .container-fluid {
@@ -102,6 +106,11 @@
 
       section {
         padding: 100px 0;
+        background-color: #ecebe9;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
       }
 
       .marker {
@@ -119,7 +128,8 @@
       }
 
       .txt {
-        width: 70%;
+        width: 85%;
+        margin: 165px 0;
       }
 
       .details,
@@ -132,6 +142,22 @@
         max-width: 100%;
         font-size: 20px;
         font-weight: 700;
+      }
+
+      #color-blue {
+        color: #7c96d9;
+      }
+
+      #color-graphite {
+        color: #707086;
+      }
+
+      #color-purple {
+        color: #9e6ede;
+      }
+
+      #color-pink {
+        color: #faa084;
       }
 
       .section1img {
@@ -198,8 +224,39 @@
       .headline {
         font-size: 70px;
       }
+
+      .row {
+        padding: 150px auto;
+      }
+
+      #section1-txt1,
+      #section2-txt1, #section2-txt2 {
+        width: 80%;
+      }
+
+      #section2 {
+        background-color: #101010;
+      }
+
+      .white-marker, .white-headline
+      .white-category, .white-bold {
+        color: white;
+      }
+
+      .whitesmoke-details {
+        color: #bfbfbf"
+      }
+
+      #flippin {
+        font-size: 130px
+      }
+
+      #section3 {
+        background-color: white;
+      }
     </style>
   </head>
+
   <body id="pageTop">
     <nav id="mainNav" class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -307,7 +364,7 @@
                 <span class="category">COLOURS</span>
                 <br />
                 <br />
-                <p class="details">
+                <p id="section1-txt1" class="details">
                   Choose a color for your Samsung Galaxy Z Flip4 that
                   <b>goes with everything</b> — but
                   <b>looks like nothing else</b>.
@@ -333,7 +390,7 @@
                 data-aos-anchor-placement="bottom-top"
               >
                 <div class="section1">
-                  <h4 class="colorsTxt" style="color: #7c96d9">BLUE</h4>
+                  <h4 id="color-blue" class="colorsTxt">BLUE</h4>
                   <img
                     src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
                     alt="Galaxy Z Flip 4 - Blue"
@@ -342,7 +399,7 @@
                 </div>
 
                 <div class="section1">
-                  <h4 class="colorsTxt" style="color: #707086">GRAPHITE</h4>
+                  <h4 id="color-graphite" class="colorsTxt">GRAPHITE</h4>
                   <img
                     src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
                     alt="Galaxy Z Flip 4 - Blue"
@@ -351,7 +408,7 @@
                 </div>
 
                 <div class="section1">
-                  <h4 class="colorsTxt" style="color: #9e6ede">BORA PURPLE</h4>
+                  <h4 id="color-purple" class="colorsTxt">BORA PURPLE</h4>
                   <img
                     src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
                     class="section1-img"
@@ -359,7 +416,7 @@
                 </div>
 
                 <div class="section1">
-                  <h4 class="colorsTxt" style="color: #faa084">PINK</h4>
+                  <h4 id="color-pink" class="colorsTxt">PINK</h4>
                   <img
                     src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true"
                     class="section1-img"
@@ -369,7 +426,7 @@
             </div>
           </div>
 
-          <div class="row mx-0" style="margin: 150px auto">
+          <div class="row mx-0">
             <!-- Section1-Img2 -->
             <div class="col-12 col-md-6">
               <img
@@ -391,7 +448,6 @@
             >
               <div
                 class="txt text-start"
-                style="width: 85%; margin: 162px 0"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-delay="1"
@@ -418,18 +474,18 @@
       </section>
 
       <!-- Part 2 -->
-      <section id="section2" style="background-color: #101010">
+      <section id="section2">
         <div class="container-fluid">
           <div id="section2-row1" class="row d-flex align-items-center mx-0">
             <div class="col-12">
-              <span class="marker" style="color: white">02</span>
+              <span class="marker white-marker">02</span>
             </div>
 
             <!-- Section2-Text1 -->
             <div class="d-flex align-items-center col-12 col-md-6">
               <div
+                id="section2-txt1"
                 class="txt text-start"
-                style="width: 85%"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-delay="1"
@@ -437,19 +493,19 @@
                 data-aos-anchor="#section2"
                 data-aos-anchor-placement="top-top"
               >
-                <p class="headline" style="color: white">
+                <p class="headline white-headline">
                   Withstands drips and drops
                 </p>
                 <br />
                 <br />
-                <span class="category" style="color: white"
+                <span class="category white-category"
                   >IPX8 WATER RESISTANCE</span
                 >
                 <br />
                 <br />
-                <p class="details" style="color: #bfbfbf">
+                <p class="details whitesmoke-details">
                   Water you worried about? Water-resistant foldable smartphones.
-                  It can hang out in <b style="color: white">1.5 meters</b> of
+                  It can hang out in <b class="white-bold">1.5 meters</b> of
                   water for up to 30 minutes without breaking a sweat.
                 </p>
               </div>
@@ -472,10 +528,7 @@
             </div>
           </div>
 
-          <div
-            class="row d-flex align-items-center mx-0"
-            style="padding: 150px 0 50px 0"
-          >
+          <div class="row d-flex align-items-center mx-0">
             <!-- Section2-Img2 -->
             <div class="col-12 col-md-6">
               <img
@@ -496,8 +549,8 @@
               class="d-flex justify-content-center align-items-center col-12 col-md-6"
             >
               <div
+                id="section2-txt2"
                 class="txt text-start"
-                style="width: 85%"
                 data-aos="fade-left"
                 data-aos-easing="linear"
                 data-aos-delay="1"
@@ -505,16 +558,14 @@
                 data-aos-anchor="#section2-img1"
                 data-aos-anchor-placement="bottom-center"
               >
-                <p class="headline" style="color: white">
-                  Holds up from flex to flat
-                </p>
+                <p class="headline whit-headline">Holds up from flex to flat</p>
                 <br />
                 <br />
-                <p class="details" style="color: #bfbfbf">
-                  The <b style="color: white">6.7-inch display</b> unfolds a
+                <p class="details whitesmoke-details">
+                  The <b class="white-bold">6.7-inch display</b> unfolds a
                   beautiful view thanks to Ultra Thin Glass. Advanced durability
                   makes it stronger than ever — staying tough through
-                  <b style="color: white">more than 200,000 folds</b>.
+                  <b class="white-bold">more than 200,000 folds</b>.
                 </p>
                 <br />
                 <img
@@ -538,18 +589,14 @@
       <!-- Part 3 -->
       <section id="section3">
         <div class="container-fluid">
-          <div
-            id="section3-row1"
-            class="row mx-0"
-            style="padding: 370px 0 350px 0"
-          >
+          <div id="section3-row1" class="row mx-0">
             <!-- Section3-Text1 -->
             <div
               class="d-flex justify-content-center align-items-center col-12"
             >
               <p
+                id="flippin"
                 class="headline"
-                style="font-size: 130px"
                 data-aos="zoom-out"
                 data-aos-delay="1"
                 data-aos-duration="500"
@@ -587,11 +634,9 @@
             <!-- Section3-Text2 -->
             <div
               class="d-flex justify-content-center align-items-center col-12"
-              style="margin: 70px 0 90px 0"
             >
               <p
                 class="details text-center"
-                style="width: 60%"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-delay="5"
@@ -611,15 +656,7 @@
       </section>
 
       <!-- Part 4 -->
-      <section
-        style="
-          background-color: #ecebe9;
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-        "
-      >
+      <section>
         <div class="container-fluid">
           <div id="section4-row1" class="row mx-0">
             <div class="col-12">
@@ -645,7 +682,6 @@
             <div class="d-flex justify-content-end col-12 col-md-6">
               <div
                 class="txt"
-                style="width: 90%"
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-delay="5"
@@ -653,9 +689,7 @@
                 data-aos-anchor="#section3"
                 data-aos-anchor-placement="bottom-top"
               >
-                <p class="headline" style="width: 85%">
-                  Flex your photo skills
-                </p>
+                <p class="headline">Flex your photo skills</p>
                 <br />
                 <br />
                 <br />
@@ -675,11 +709,10 @@
           </div>
 
           <!-- Section4-Row2 -->
-          <div id="section4-row2" class="row mx-0" style="padding: 150px 0">
+          <div id="section4-row2" class="row mx-0">
             <div class="d-flex align-items-end col-12 col-md-6">
               <div
                 class="txt text-start"
-                style="width: 85%"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-delay="1"
@@ -706,7 +739,6 @@
               <img
                 src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dc19290-1808-11ed-bed7-99aea0ad75fd"
                 alt=""
-                style="border: 5px solid white; border-radius: 20px"
                 width="100%"
                 data-aos="fade-up"
                 data-aos-easing="linear"
@@ -722,22 +754,18 @@
     </div>
 
     <div id="features">
-      <header
-        style="
-          background-image: url(https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true);width: auto;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 170px 0;
-        "
-      >
-      <div class="container-fluid">
-        <div id="header2-row" class="row mx-0">
-          <div class="d-flex justify-content-center col-12">
-            <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/header-img2.png?raw=true" alt="">
+      <header id="header2">
+        <div class="container-fluid">
+          <div id="header2-row" class="row mx-0">
+            <div class="d-flex justify-content-center col-12">
+              <img
+                src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/header-img2.png?raw=true"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-      </div></header>
+      </header>
     </div>
 
     <!-- Bootstrap JS -->
