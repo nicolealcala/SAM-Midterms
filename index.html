@@ -92,6 +92,8 @@
         line-height: 75px;
       }
 
+      .headline
+
       .white-headline {
         color: white;
       }
@@ -262,12 +264,13 @@
         height: 50px;
         background-color: #fed1b2;
       }
-      #slide-blue,
-      #slide-graphite,
-      #slide-purple,
-      #slide-pink {
+      #slide-blue::before,
+      #slide-graphite::before,
+      #slide-purple::before,
+      #slide-pink::before {
         opacity: 0.4;
       }
+
       .active > #slide-blue, 
       .active > #slide-graphite,
       .active > #slide-purple,
@@ -293,6 +296,7 @@
       #flippin,
       #build-txt {
         font-size: 130px;
+        line-height: 130px;
       }
 
       #build-txt {
@@ -347,7 +351,7 @@
       }
 
       #header3 {
-        background-image: url("https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dba1880-1808-11ed-bffa-50adc1e7b4fe");
+        background-image: url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/banner1.png?raw=true");
       }
     </style>
   </head>
@@ -516,12 +520,12 @@
               </div>
             </div>
 
-            <!-- Seciton1-Visual1 -->
+            <!-- Section1-Visual1 -->
             <div
               class="d-flex justify-content-center align-items-center col-12 col-md-6"
             >
               <div
-              id="ele-carousel"
+                id="ele-carousel"
                 class="carousel slide"
                 data-bs-ride="carousel"
                 data-aos="fade-up"
@@ -1217,15 +1221,9 @@
 
     <div id="build">
       <header id="header3">
-        <div class="container-fluid">
-          <div id="build" class="row">
-            <div class="col-12">
-              <p id="build-txt" class="headline text-center">Build</p>
-            </div>
-          </div>
-        </div>
       </header>
 
+      <!-- Build-Section1 -->
       <section id="build-s1">
         <div class="container-fluid"></div>
       </section>
@@ -1266,7 +1264,7 @@
       // $(document).ready(function () {
       //   $(".slick-dots").appendTo("#scheme");
       // });
-
+      
       //Video Play
       window.addEventListener("load", videoScroll);
       window.addEventListener("scroll", videoScroll);
