@@ -39,9 +39,12 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/icon.png?raw=true">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/icon.png?raw=true"
+    />
 
     <style>
       html {
@@ -96,9 +99,7 @@
         line-height: 75px;
       }
 
-      .headline
-
-      .white-headline {
+      .headline .white-headline {
         color: white;
       }
       #subTxt {
@@ -155,7 +156,7 @@
 
       .txt {
         width: 85%;
-        margin: 165px 0;
+        /* margin: 165px 0; */
       }
 
       .details,
@@ -234,24 +235,27 @@
         content: "";
         opacity: 0.55;
       } */
-      
-      .indicator {
-        border-radius: 100%;
-        background-color: #aecbf3;
-        content: "";
-        margin: 0 5px 0 0;   
-        opacity: 0.55;
+      .carousel {
+        width: 100%;
+      }
+
+      .carousel-indicators {
+        width: 100%;
+        position: relative;
       }
 
       #slide-blue {
         width: 50px;
         height: 50px;
         margin-right: 10px;
+        border-radius: 100%;
         background-color: #aecbf3;
       }
+
       #slide-graphite {
         width: 50px;
         height: 50px;
+        border-radius: 100%;
         margin-right: 10px;
         background-color: #757c83;
       }
@@ -259,6 +263,7 @@
       #slide-purple {
         width: 50px;
         height: 50px;
+        border-radius: 100%;
         margin-right: 10px;
         background-color: #b292c7;
       }
@@ -266,29 +271,16 @@
       #slide-pink {
         width: 50px;
         height: 50px;
+        border-radius: 100%;
         background-color: #fed1b2;
       }
-      #slide-blue::before,
-      #slide-graphite::before,
-      #slide-purple::before,
-      #slide-pink::before {
-        opacity: 0.4;
-      }
 
-      .active > #slide-blue, 
-      .active > #slide-graphite,
-      .active > #slide-purple,
-      .active > #slide-pink{
+      .active {
         opacity: 1;
       }
-
-      .carousel-item > .img-fluid{
-        float: end;
-      }
-
-      .carousel-indicators {
+      .carousel-item > .img-fluid {
         width: 100%;
-        position: relative;
+        float: right;
       }
 
       .row {
@@ -467,75 +459,19 @@
             </div>
 
             <!-- Section1-Text1 -->
-            <div
+            <!-- <div
               class="d-flex justify-content-center align-items-center col-12 col-md-6"
             >
-              <div
-                class="txt"
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-                data-aos-anchor="#header-row"
-                data-aos-anchor-placement="bottom-top"
-              >
-                <span class="category">COLOURS</span>
-                <br />
-                <br />
-                <p id="section1-txt1" class="details">
-                  Choose a color for your Samsung Galaxy Z Flip4 that
-                  <b>goes with everything</b> — but
-                  <b>looks like nothing else</b>.
-                </p>
-
-                <div class="py-4" id="scheme">
-                  <div class="d-flex justify-content-start carousel-indicators m-0">
-                    <button
-                    id="slide-blue"
-                      type="button"
-                      data-bs-target="#ele-carousel"
-                      data-bs-slide-to="0"
-                      class="active indicator"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                    id="slide-graphite"
-                      type="button"
-                      data-bs-target="#ele-carousel"
-                      data-bs-slide-to="1"
-                      class="indicator"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                    id="slide-purple"
-                      type="button"
-                      data-bs-target="#ele-carousel"
-                      data-bs-slide-to="2"
-                      class="indicator"
-                      aria-label="Slide 3"
-                    ></button>
-                    <button
-                    id="slide-pink"
-                      type="button"
-                      data-bs-target="#ele-carousel"
-                      data-bs-slide-to="3"
-                      class="indicator"
-                      aria-label="Slide 4"
-                    ></button>
-                  </div>
-                </div>
-              </div>
-            </div>
+              
+            </div> -->
 
             <!-- Section1-Visual1 -->
-            <div
-              class="d-flex justify-content-center align-items-center col-12 col-md-6"
-            >
+            <div class="d-flex justify-content-end align-items-center col-12">
               <div
                 id="ele-carousel"
                 class="carousel slide"
                 data-bs-ride="carousel"
+                data-bs-interval="2000"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-delay="1"
@@ -543,105 +479,104 @@
                 data-aos-anchor="#header-row"
                 data-aos-anchor-placement="bottom-top"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
-                      class="img-fluid"
-                      alt="..."
-                    />
+                <div class="row mx-0">
+                  <!-- Carousel 1st Half -->
+                  <div class="d-flex justify-content-start align-items-center col-6">
+                    <div
+                      class="txt"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-delay="1"
+                      data-aos-duration="300"
+                      data-aos-anchor="#header-row"
+                      data-aos-anchor-placement="bottom-top"
+                    >
+                      <span class="category">COLOURS</span>
+                      <br />
+                      <br />
+                      <p id="section1-txt1" class="details">
+                        Choose a color for your Samsung Galaxy Z Flip4 that
+                        <b>goes with everything</b> — but
+                        <b>looks like nothing else</b>.
+                      </p>
+
+                      <div
+                      class="d-flex justify-content-start carousel-indicators m-0"
+                    >
+                      <button
+                        id="slide-blue"
+                        type="button"
+                        data-bs-target="#ele-carousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        id="slide-graphite"
+                        type="button"
+                        data-bs-target="#ele-carousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        id="slide-purple"
+                        type="button"
+                        data-bs-target="#ele-carousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        id="slide-pink"
+                        type="button"
+                        data-bs-target="#ele-carousel"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                    </div>
+                    </div>
+                    
                   </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
-                      class="img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
-                      class="img-fluid"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true"
-                      class="img-fluid"
-                      alt="..."
-                    />
+
+                  <!-- Carousel 2nd Half -->
+                  <div class="col-6">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <h4 id="color-blue" class="colorsTxt">BLUE</h4>
+                        <img
+                          src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
+                          class="img-fluid"
+                          alt="Samsung GalaxyZ Flip4 - Blue"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <h4 id="color-graphite" class="colorsTxt">GRAPHITE</h4>
+                        <img
+                          src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
+                          class="img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <h4 id="color-purple" class="colorsTxt">BORA PURPLE</h4>
+                        <img
+                          src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
+                          class="img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <h4 id="color-pink" class="colorsTxt">PINK GOLD</h4>
+                        <img
+                          src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true"
+                          class="img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#ele-carousel"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#ele-carousel"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
-
-              <!-- <div
-                class="carousel"
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-                data-aos-anchor="#header-row"
-                data-aos-anchor-placement="bottom-top"
-              >
-                <div class="section1">
-                  <h4 id="color-blue" class="colorsTxt">BLUE</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-blue.png?raw=true"
-                    alt="Galaxy Z Flip 4 - Blue"
-                    class="section1-img"
-                  />
-                </div>
-
-                <div class="section1">
-                  <h4 id="color-graphite" class="colorsTxt">GRAPHITE</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-graphite.png?raw=true"
-                    alt="Galaxy Z Flip 4 - Blue"
-                    class="section1-img"
-                  />
-                </div>
-
-                <div class="section1">
-                  <h4 id="color-purple" class="colorsTxt">BORA PURPLE</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-purple.png?raw=true"
-                    class="section1-img"
-                  />
-                </div>
-
-                <div class="section1">
-                  <h4 id="color-pink" class="colorsTxt">PINK</h4>
-                  <img
-                    src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section1-pink.png?raw=true"
-                    class="section1-img"
-                  />
-                </div>
-              </div> -->
             </div>
           </div>
 
@@ -1128,8 +1063,8 @@
                 <span class="feature-category">MEMORY</span>
                 <p class="feature-details">
                   8GB RAM 128GB<br />
-                  8GB RAM 256GB  <br />
-                  8GB RAM 512GB 
+                  8GB RAM 256GB <br />
+                  8GB RAM 512GB
                 </p>
               </div>
             </div>
@@ -1202,21 +1137,21 @@
           </div>
 
           <div class="row mx-0">
-            <div class="d-flex justify-content-center align-items-center col-4">
+            <div class="d-flex justify-content-center align-items-start col-4">
               <div class="feature-txt text-center">
                 <p id="dark-category" class="feature-category">AnTuTu</p>
                 <p class="p-details">685754 (v8) | 800001 (v9)</p>
               </div>
             </div>
 
-            <div class="d-flex justify-content-center align-items-center col-4">
+            <div class="d-flex justify-content-center align-items-start col-4">
               <div class="feature-txt text-center">
                 <p id="dark-category" class="feature-category">GeekBench</p>
                 <p class="p-details">3913 (v5.1)</p>
               </div>
             </div>
 
-            <div class="d-flex justify-content-center align-items-center col-4">
+            <div class="d-flex justify-content-center align-items-start col-4">
               <div class="feature-txt text-center">
                 <p id="dark-category" class="feature-category">GFXBench</p>
                 <p class="p-details">74fps (ES 3.1 onscreen)</p>
@@ -1228,8 +1163,7 @@
     </div>
 
     <div id="build">
-      <header id="header3">
-      </header>
+      <header id="header3"></header>
 
       <!-- Build-Section1 -->
       <section id="build-s1">
@@ -1256,23 +1190,6 @@
       //AOS
       AOS.init();
 
-      // $(".carousel").slick({
-      //   dots: true,
-      //   // arrows: false,
-      //   infinite: true,
-      //   slidesToShow: 1,
-      //   slidesToScroll: 1,
-      //   autoplay: true,
-      //   centerMode: false,
-      //   variableWidth: true,
-      //   autoplaySpeed: 2500,
-      // });
-
-      //Slick
-      // $(document).ready(function () {
-      //   $(".slick-dots").appendTo("#scheme");
-      // });
-      
       //Video Play
       window.addEventListener("load", videoScroll);
       window.addEventListener("scroll", videoScroll);
@@ -1280,20 +1197,20 @@
       function videoScroll() {
         if (document.querySelectorAll("video[autoplay]").length > 0) {
           var windowHeight = window.innerHeight,
-            videoEl = document.querySelectorAll("video[autoplay]");
+            vid1 = document.querySelectorAll("video[autoplay]");
 
-          for (var i = 0; i < videoEl.length; i++) {
-            var thisVideoEl = videoEl[i],
-              videoHeight = thisVideoEl.clientHeight,
-              videoClientRect = thisVideoEl.getBoundingClientRect().top;
+          for (var i = 0; i < vid1.length; i++) {
+            var video1 = vid1[i],
+              videoHeight = video1.clientHeight,
+              videoClientRect = video1.getBoundingClientRect().top;
 
             if (
               videoClientRect <= windowHeight - videoHeight * 0.5 &&
               videoClientRect >= 0 - videoHeight * 0.5
             ) {
-              thisVideoEl.play();
+              viceo1.play();
             } else {
-              thisVideoEl.pause();
+              video1.pause();
             }
           }
         }
