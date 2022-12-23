@@ -15,7 +15,7 @@
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700&family=Poppins:wght@200;300;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700&family=Poppins:wght@200;300;500;600;700;800&family=Roboto&display=swap"
       rel="stylesheet"
     />
 
@@ -296,36 +296,39 @@
         background-color: black;
       }
 
-      .feature-category {
+      .feature-category,
+      .feature-stats {
         font-family: "Barlow Condensed";
-        color: rgb(255, 255, 255);
-        font-size: 100px;
+        color: white;
+        font-size: 90px;
         font-weight: 500;
+      }
+
+      .feature-stats {
+        font-size: 50px;
       }
 
       .feature-details,
       .feature-subtitle,
       .p-details {
-        color: #e3e3e3;
-        font-family: "Plus Jakarta Sans";
+        color: #dddddd;
+        font-family: "Roboto";
         font-size: 22px;
       }
 
       .feature-subtitle {
         color: white;
+        font-family: "Plus Jakarta Sans";
         font-size: 22px;
+        font-weight: 600;
       }
 
-      .feature-txt {
-        width: 60%;
-      }
-
-      #dark-category,
-      .p-details {
-        color: #bfbfbf;
+      #dark-category {
+        color: #525252;
       }
 
       .p-details {
+        color: #cdcdcd;
         font-size: 24px;
         font-weight: 500;
       }
@@ -906,18 +909,22 @@
     <div id="features">
       <header id="header2">
         <div class="container-fluid">
+          <!-- Processor -->
           <div id="header2-row1" class="row mx-0 gy-4">
-            <!-- Processor -->
             <div
-              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+              class="d-flex justify-content-start align-items-start col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
               <span class="feature-category">PROCESSOR</span>
             </div>
 
             <div
               class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
-              <div class="txt text-start">
+              <div class="text-start">
                 <span class="feature-subtitle"> CPU Speed </span>
                 <p class="feature-details">3.18GHz, 2.7 GHz, 2 GHz</p>
               </div>
@@ -925,8 +932,10 @@
 
             <div
               class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
-              <div class="txt text-start">
+              <div class="text-start">
                 <span class="feature-subtitle"> CPU Type </span>
                 <p class="feature-details">Octa-Core</p>
               </div>
@@ -934,17 +943,21 @@
           </div>
 
           <!-- Camera -->
-          <div id="header2-row1" class="row mx-0 gy-4">
+          <div id="header2-row2" class="row mx-0 gy-4">
             <div
-              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
               <span class="feature-category">CAMERA</span>
             </div>
 
             <div
               class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
-              <div class="txt text-start">
+              <div class="text-start">
                 <span class="feature-subtitle">
                   Rear Camera - Resolution (Multiple)
                 </span>
@@ -968,9 +981,11 @@
             </div>
 
             <div
-              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+              class="d-flex justify-content-start align-items-start col-12 col-sm-12 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
-              <div class="txt text-start">
+              <div class="text-start">
                 <span class="feature-subtitle">
                   Rear Camera - F Number (Multiple)
                 </span>
@@ -997,31 +1012,324 @@
             </div>
           </div>
 
-          <div id="header2-row1" class="row mx-0 gy-4">
-            <!-- Memory -->
+          <!-- Memory -->
+          <div id="header2-row3" class="row mx-0 gy-4">
             <div
-              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
               <span class="feature-category">MEMORY</span>
             </div>
 
             <div
               class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
-              <div class="txt text-start">
+              <div class="text-start">
                 <span class="feature-subtitle">RAM Size </span>
                 <p class="feature-details">8GB</p>
+
                 <span class="feature-subtitle">Available Memory</span>
                 <p class="feature-details">99.8GB</p>
               </div>
             </div>
 
             <div
-              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              class="d-flex justify-content-start align-items-start col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
             >
-              <div class="txt text-start">
+              <div class="text-start">
                 <span class="feature-subtitle">ROM Size</span>
                 <p class="feature-details">128GB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Network/Bearer -->
+          <div id="header2-row3" class="row mx-0 gy-4">
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <span class="feature-category">NETWORK</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start" width="90%">
+                <span class="feature-subtitle">Number of SIM</span>
+                <p class="feature-details">Dual-SIM</p>
+
+                <span class="feature-subtitle">Infra</span>
+                <p class="feature-details">
+                  2G GSM, 3G WCDMA, 4G LTE FDD, 4G LTE TDD, 5G Sub6 FDD, 5G Sub6
+                  TDD
+                </p>
+
+                <span class="feature-subtitle">3G UMTS</span>
+                <p class="feature-details">
+                  B1 (2100), B2 (1900), B4 (AWS), B5 (850), B8 (900)
+                </p>
+
+                <span class="feature-subtitle">4G TDD LTE</span>
+                <p class="feature-details">
+                  B38 (2600), B39 (1900), B40 (2300), B41 (2500)
+                </p>
+
+                <span class="feature-subtitle">5G TDD Sub6</span>
+                <p class="feature-details">
+                  N38 (2600), N40 (2300), N41 (2500), N77 (3700), N78 (3500)
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-start col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start" width="90%">
+                <span class="feature-subtitle">SIM Slot Type</span>
+                <p class="feature-details">SIM 1 + Embedded SIM</p>
+
+                <span class="feature-subtitle">2G GSM</span>
+                <p class="feature-details">GSM850, GSM900, DCS1800, PCS1900</p>
+
+                <span class="feature-subtitle">4G FDD LTE</span>
+                <p class="feature-details">
+                  B1 (2100), B2 (1900), B3 (1800), B4 (AWS), B5 (850), B7
+                  (2600), B8 (900), B12 (700), B13 (700), B17 (700), B18 (800),
+                  B19 (800), B20 (800), B25 (1900), B26 (850), B28 (700), B66
+                  (AWS-3)
+                </p>
+
+                <span class="feature-subtitle">5G FDD Sub6</span>
+                <p class="feature-details">
+                  N1 (2100), N2 (1900), N3 (1800), N5 (850), N7 (2600), N8
+                  (900), N12 (700), N20 (800), N25 (1900), N28 (700), N66
+                  (AWS-3)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connectivity -->
+          <div id="header2-row3" class="row mx-0 gy-4">
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <span class="feature-category">CONNECTIVITY</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start" width="90%">
+                <span class="feature-subtitle"> USB Interface</span>
+                <p class="feature-details">USB Type-C</p>
+
+                <span class="feature-subtitle">Location Technology </span>
+                <p class="feature-details">
+                  GPS, Glonass, Beidou, Galileo, QZSS
+                </p>
+
+                <span class="feature-subtitle">MHL</span>
+                <p class="feature-details">No</p>
+
+                <span class="feature-subtitle">Wi-Fi Direct </span>
+                <p class="feature-details">Yes</p>
+
+                <span class="feature-subtitle">NFC</span>
+                <p class="feature-details">Yes</p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start" width="90%">
+                <span class="feature-subtitle">USB Version </span>
+                <p class="feature-details">USB 2.0</p>
+
+                <span class="feature-subtitle">Earjack</span>
+                <p class="feature-details">USB Type-C</p>
+
+                <span class="feature-subtitle">Wi-Fi </span>
+                <p class="feature-details">
+                  802.11 a / b / g / n / ac / ax 2.4G+ 5GHz, HE160, MIMO,
+                  1024-QAM
+                </p>
+
+                <span class="feature-subtitle">Bluetooth Version</span>
+                <p class="feature-details">Bluetooth v5.2</p>
+
+                <span class="feature-subtitle">PC Sync. </span>
+                <p class="feature-details">Smart Switch (PC version)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- OS -->
+          <div id="header2-row3" class="row mx-0 gy-4">
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <span class="feature-category">OS</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-8 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start">
+                <p class="feature-details">
+                  Android 12, upgradable to Android 13, One UI 5
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sensors -->
+          <div id="header2-row3" class="row mx-0 gy-4">
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <span class="feature-category">SENSORS</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-8 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start">
+                <p class="feature-details">
+                  Accelerometer, Barometer, Fingerprint Sensor, Gyro Sensor,
+                  Geomagnetic Sensor, Hall Sensor, Light Sensor, Proximity
+                  Sensor
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Battery -->
+          <div id="header2-row3" class="row mx-0 gy-4">
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <span class="feature-category">BATTERY</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start">
+                <span class="feature-subtitle"
+                  >Internet Usage Time(LTE) (Hours)</span
+                >
+                <p class="feature-details">Up to 16</p>
+
+                <span class="feature-subtitle"
+                  >Video Playback Time (Hours, Wireless)
+                </span>
+                <p class="feature-details">Up to 19</p>
+
+                <span class="feature-subtitle">Removable </span>
+                <p class="feature-details">No</p>
+
+                <span class="feature-subtitle"
+                  >Talk Time (4G LTE) (Hours)
+                </span>
+                <p class="feature-details">Up to 34</p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-start col-12 col-sm-12 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start">
+                <span class="feature-subtitle"
+                  >Internet Usage Time(Wi-Fi) (Hours)</span
+                >
+                <p class="feature-details">Up to 16</p>
+
+                <span class="feature-subtitle"
+                  >Battery Capacity (mAh, Typical)
+                </span>
+                <p class="feature-details">3700</p>
+
+                <span class="feature-subtitle"
+                  >Audio Playback Time (Hours, Wireless)
+                </span>
+                <p class="feature-details">Up to 56</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Audio and Video -->
+          <div id="header2-row3" class="row mx-0 gy-4">
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <span class="feature-category">AUDIO & VIDEO</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start">
+                <span class="feature-subtitle"> Video Playing Format</span>
+                <p class="feature-details">
+                  MP4, M4V, 3GP, 3G2, AVI, FLV, MKV, WEBM
+                </p>
+
+                <span class="feature-subtitle">Audio Playing Format </span>
+                <p class="feature-details">
+                  MP3, M4A, 3GA, AAC, OGG, OGA, WAV, AMR, AWB, FLAC, MID, MIDI,
+                  XMF, MXMF, IMY, RTTTL, RTX, OTA, DFF, DSF, APE
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-start col-12 col-sm-12 col-md-4 pt-4"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+            >
+              <div class="text-start">
+                <span class="feature-subtitle">Stereo Support</span>
+                <p class="feature-details">Yes</p>
+
+                <span class="feature-subtitle">Video Playing Resolution </span>
+                <p class="feature-details">UHD 8K (7680 x 4320) @ 60fps</p>
               </div>
             </div>
           </div>
@@ -1038,24 +1346,52 @@
 
           <div class="row mx-0">
             <div class="d-flex justify-content-center align-items-start col-4">
-              <div class="feature-txt text-center">
-                <p id="dark-category" class="feature-category">AnTuTu</p>
+              <div
+                class="text-center"
+                data-aos="flip-down"
+                data-aos-easing="linear"
+              >
+                <p id="dark-category" class="feature-stats">AnTuTu</p>
                 <p class="p-details">685754 (v8) | 800001 (v9)</p>
               </div>
             </div>
 
             <div class="d-flex justify-content-center align-items-start col-4">
-              <div class="feature-txt text-center">
-                <p id="dark-category" class="feature-category">GeekBench</p>
+              <div
+                class="text-center"
+                data-aos="flip-down"
+                data-aos-easing="linear"
+              >
+                <p id="dark-category" class="feature-stats">GeekBench</p>
                 <p class="p-details">3913 (v5.1)</p>
               </div>
             </div>
 
             <div class="d-flex justify-content-center align-items-start col-4">
-              <div class="feature-txt text-center">
-                <p id="dark-category" class="feature-category">GFXBench</p>
+              <div
+                class="text-center"
+                data-aos="flip-down"
+                data-aos-easing="linear"
+              >
+                <p id="dark-category" class="feature-stats">GFXBench</p>
                 <p class="p-details">74fps (ES 3.1 onscreen)</p>
               </div>
+            </div>
+
+            <div class="col-12">
+              <video autoplay
+              muted
+              playsinline
+              width="100%"
+              data-aos="zoom-in"
+              data-aos-easing="up"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              type="video/mp4"
+              placeholder="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/buy/Flip4_Carousel_GroupKV_PC.jpg?imwidth=1366"
+              src="https://youtu.be/8EPn6V_i4CQ?t=8"
+              width="100%"
+            ></video>
             </div>
           </div>
         </div>
