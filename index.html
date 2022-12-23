@@ -63,8 +63,7 @@
         margin: 0 50px;
       }
 
-      header,
-      #header2, #header3 {
+      header {
         width: auto;
         background-image: url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme1.png?raw=true");
         background-position: center center;
@@ -75,8 +74,18 @@
       }
 
       #header2 {
+        width: auto;
         background: linear-gradient(rgb(112, 79, 183, 0.5), rgb(12, 6, 36)),
           url("https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dba1880-1808-11ed-bffa-50adc1e7b4fe");
+        /* background-repeat: no-repeat; */
+        background-position: center center;
+        background-attachment: fixed;
+      }
+
+      #header3 {
+        width: auto;
+        background-image: url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
+        background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
       }
@@ -1394,9 +1403,14 @@
       </section>
     </div>
 
+    <!-- BUILD -->
     <div id="build">
       <header id="header3">
-        <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/build-dimensions.png?raw=true" alt="" class="img-fluid">
+        <div class="row">
+          <div class="d-flex justify-content-center align-items-center col-12">
+            <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/build-dimensions.png?raw=true" alt="" class="img-fluid" width="30%">
+          </div>
+        </div>
       </header>
     </div>
 
