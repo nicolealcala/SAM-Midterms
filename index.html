@@ -75,8 +75,10 @@
       }
 
       #header2 {
-        background: linear-gradient(rgba(31, 61, 111, 0.5), rgb(72, 0, 72, 0.3)),
-          url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
+        /* background: linear-gradient(rgba(31, 61, 111, 0.5), rgb(72, 0, 72, 0.3)),
+          url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true"); */
+        background: linear-gradient(rgb(112, 79, 183, 0.5), rgb(12, 6, 36)),
+          url("https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dba1880-1808-11ed-bffa-50adc1e7b4fe");
         background-position: center center;
         background-attachment: fixed;
       }
@@ -96,9 +98,10 @@
         line-height: 75px;
       }
 
-      .headline .white-headline {
+      .white-headline {
         color: white;
       }
+
       #subTxt {
         font-family: "Poppins";
         font-weight: 300;
@@ -153,7 +156,10 @@
 
       .txt {
         width: 85%;
-        /* margin: 165px 0; */
+      }
+
+      #fits {
+        margin: 165px 0;
       }
 
       .details,
@@ -286,17 +292,21 @@
         width: 85%;
       }
 
+      #features-s1 {
+        background-color: black;
+      }
+
       .feature-category {
         font-family: "Barlow Condensed";
-        color: rgb(252, 239, 152);
-        font-size: 40px;
+        color: rgb(255, 255, 255);
+        font-size: 100px;
         font-weight: 500;
       }
 
       .feature-details,
       .feature-subtitle,
       .p-details {
-        color: #bfbfbf;
+        color: #e3e3e3;
         font-family: "Plus Jakarta Sans";
         font-size: 22px;
       }
@@ -312,7 +322,7 @@
 
       #dark-category,
       .p-details {
-        color: #303030;
+        color: #bfbfbf;
       }
 
       .p-details {
@@ -381,7 +391,7 @@
       <header>
         <div class="container-fluid">
           <div id="header-row" class="row gx-5 d-flex my-5">
-            <div class="d-flex align-items-center col-12 col-md-5">
+            <div class="d-flex align-items-center col-12 col-sm-12 col-md-5">
               <div>
                 <span
                   id="subTxt"
@@ -401,7 +411,7 @@
               </div>
             </div>
             <div
-              class="d-flex align-items-center justify-content-end col-12 col-md-7"
+              class="d-flex align-items-center justify-content-end col-12 col-sm-12 col-md-7"
             >
               <img
                 src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/header-img.png?raw=true"
@@ -427,13 +437,6 @@
                 >01</span
               >
             </div>
-
-            <!-- Section1-Text1 -->
-            <!-- <div
-              class="d-flex justify-content-center align-items-center col-12 col-md-6"
-            >
-              
-            </div> -->
 
             <!-- Section1-Visual1 -->
             <div class="d-flex justify-content-end align-items-center col-12">
@@ -553,7 +556,7 @@
 
           <div class="row mx-0">
             <!-- Section1-Img2 -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-sm-12 col-md-6">
               <img
                 data-aos="fade-right"
                 data-aos-easing="linear"
@@ -569,9 +572,10 @@
 
             <!-- Section1-Text2 -->
             <div
-              class="d-flex justify-content-end align-items-center col-12 col-md-6"
+              class="d-flex justify-content-end align-items-center col-12 col-sm-12 col-md-6"
             >
               <div
+                id="fits"
                 class="txt text-start"
                 data-aos="fade-up"
                 data-aos-easing="linear"
@@ -614,7 +618,7 @@
             </div>
 
             <!-- Section2-Text1 -->
-            <div class="d-flex align-items-center col-12 col-md-6">
+            <div class="d-flex align-items-center col-12 col-sm-12 col-md-6">
               <div
                 id="section2-txt1"
                 class="txt text-start"
@@ -642,7 +646,9 @@
             </div>
 
             <!-- Section2-Img1 -->
-            <div class="d-flex justify-content-center col-12 col-md-6 p-5">
+            <div
+              class="d-flex justify-content-center col-12 col-sm-12 col-md-6 p-5"
+            >
               <img
                 src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section2-water.png?raw=true"
                 alt=""
@@ -660,7 +666,7 @@
 
           <div class="row d-flex align-items-center mx-0">
             <!-- Section2-Img2 -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-sm-12 col-md-6">
               <img
                 src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/section2-img2.png?raw=true"
                 alt=""
@@ -676,7 +682,7 @@
 
             <!-- Section2-Text2 -->
             <div
-              class="d-flex justify-content-center align-items-center col-12 col-md-6"
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-6"
             >
               <div
                 id="section2-txt2"
@@ -804,7 +810,7 @@
             </div>
             <!-- Section4-Img1 -->
             <div
-              class="d-flex justify-content-center align-items-center col-12 col-md-6"
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-6"
             >
               <img
                 src="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/images/galaxy-z-flip4_highlights_flexcam_cam.png"
@@ -822,7 +828,7 @@
 
             <!-- Section4-Txt1 -->
             <div
-              class="d-flex justify-content-end align-items-center col-12 col-md-6"
+              class="d-flex justify-content-end align-items-center col-12 col-sm-12 col-md-6"
             >
               <div
                 class="txt"
@@ -854,7 +860,7 @@
 
           <!-- Section4-Row2 -->
           <div id="section4-row2" class="row mx-0">
-            <div class="d-flex align-items-end col-12 col-md-6">
+            <div class="d-flex align-items-end col-12 col-sm-12 col-md-6">
               <div
                 class="txt text-start"
                 data-aos="fade-up"
@@ -879,7 +885,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-sm-12 col-md-6">
               <img
                 src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4dc19290-1808-11ed-bed7-99aea0ad75fd"
                 alt=""
@@ -901,198 +907,121 @@
       <header id="header2">
         <div class="container-fluid">
           <div id="header2-row1" class="row mx-0 gy-4">
-            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="zoom-in-right"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">NETWORK</span>
-                <p class="feature-details">
-                  <b class="feature-subtitle">No. of Sim</b><br />
-                  Dual Sim <br />
-                  <br />
-                  <b class="feature-subtitle">Infra</b><br />
-                  2G GSM, 3G WCDMA, 4G LTE FDD, 4G LTE TDD, 5G Sub6 FDD, 5G Sub6
-                  TDD
-                  <br />
-                  <br />
-                  <b class="feature-subtitle">3G UMTS</b><br />
-                  B1 (2100), B2 (1900), B4 (AWS), B5 (850), B8 (900)
-                  <br />
-                  <br />
-                  <b class="feature-subtitle">4G TDD LTE</b><br />
-                  B38 (2600), B39 (1900), B40 (2300), B41 (2500)
-                  <br />
-                  <br />
-                  <b class="feature-subtitle">5G TDD Sub6</b><br />
-                  N38 (2600), N40 (2300), N41 (2500), N77 (3700), N78 (3500)
-                </p>
+            <!-- Processor -->
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+            >
+              <span class="feature-category">PROCESSOR</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+            >
+              <div class="txt text-start">
+                <span class="feature-subtitle"> CPU Speed </span>
+                <p class="feature-details">3.18GHz, 2.7 GHz, 2 GHz</p>
               </div>
             </div>
 
-            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="zoom-in-left"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">CONNECTIVITY</span>
-                <p class="feature-details">
-                  <b class="feature-subtitle">USB Interface</b><br />
-                  USB Type-C<br />
-                  <br />
-                  <b class="feature-subtitle">Location Technology</b><br />
-                  GPS, Glonass, Beidou, Galileo, QZSS
-                  <br />
-                  <br />
-                  <b class="feature-subtitle">MHL</b><br />
-                  No
-                  <br />
-                  <br />
-                  <b class="feature-subtitle">Wi-Fi Direct</b><br />
-                  Yes
-                  <br />
-                  <br />
-                  <b class="feature-subtitle">NFC</b><br />
-                  Yes
-                </p>
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+            >
+              <div class="txt text-start">
+                <span class="feature-subtitle"> CPU Type </span>
+                <p class="feature-details">Octa-Core</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Camera -->
+          <div id="header2-row1" class="row mx-0 gy-4">
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+            >
+              <span class="feature-category">CAMERA</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+            >
+              <div class="txt text-start">
+                <span class="feature-subtitle">
+                  Rear Camera - Resolution (Multiple)
+                </span>
+                <p class="feature-details">12.0 MP + 12.0 MP</p>
+
+                <span class="feature-subtitle"> Rear Camera - Auto Focus </span>
+                <p class="feature-details">Yes</p>
+
+                <span class="feature-subtitle"> Rear Camera - Zoom </span>
+                <p class="feature-details">Digital Zoom up to 10x</p>
+
+                <span class="feature-subtitle"> Front Camera - F Number </span>
+                <p class="feature-details">F2.4</p>
+
+                <span class="feature-subtitle"> Rear Camera - Flash </span>
+                <p class="feature-details">Yes</p>
+
+                <span class="feature-subtitle"> Slow Motion </span>
+                <p class="feature-details">960fps @HD, 240fps @FHD</p>
               </div>
             </div>
 
-            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-right"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">OPERATING SYSTEM</span>
-                <p class="feature-details">
-                  Android 12, upgradable to Android 13, One UI 5
-                </p>
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+            >
+              <div class="txt text-start">
+                <span class="feature-subtitle">
+                  Rear Camera - F Number (Multiple)
+                </span>
+                <p class="feature-details">F1.8 , F2.2</p>
+
+                <span class="feature-subtitle"> Rear Camera - OIS </span>
+                <p class="feature-details">Yes</p>
+
+                <span class="feature-subtitle">
+                  Front Camera - Resolution
+                </span>
+                <p class="feature-details">10.0 MP</p>
+
+                <span class="feature-subtitle">
+                  Front Camera - Auto Focus
+                </span>
+                <p class="feature-details">No</p>
+
+                <span class="feature-subtitle">
+                  Video Recording Resolution
+                </span>
+                <p class="feature-details">No</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="header2-row1" class="row mx-0 gy-4">
+            <!-- Memory -->
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-12 col-md-4 pt-4"
+            >
+              <span class="feature-category">MEMORY</span>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+            >
+              <div class="txt text-start">
+                <span class="feature-subtitle">RAM Size </span>
+                <p class="feature-details">8GB</p>
+                <span class="feature-subtitle">Available Memory</span>
+                <p class="feature-details">99.8GB</p>
               </div>
             </div>
 
-            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-left"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">CHIPSET</span>
-                <p class="feature-details">
-                  Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-right"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">CPU</span>
-                <p class="feature-details">
-                  Octa-core (1x3.19 GHz Cortex-X2 & 3x2.75 GHz Cortex-A710 &
-                  4x1.80 GHz Cortex-A510)
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-left"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">GPU</span>
-                <p class="feature-details">Adreno 730</p>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-right"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">MEMORY</span>
-                <p class="feature-details">
-                  8GB RAM 128GB<br />
-                  8GB RAM 256GB <br />
-                  8GB RAM 512GB
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-left"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">AUDIO AND VIDEO</span>
-                <p class="feature-details">
-                  <b>Stereo Support</b><br />
-                  Yes<br /><br />
-                  <b>Video Playing Resolution</b><br />
-                  UHD 8K (7680 x 4320) @ 60fps
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-start col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-right"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">SENSORS</span>
-                <p class="feature-details">
-                  Fingerprint (side-mounted)<br />
-                  Accelerometer<br />
-                  Gyro<br />
-                  Proximity<br />
-                  Compass<br />
-                  Barometer<br />
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-end col-12 col-md-6 pt-4">
-              <div
-                class="feature-txt"
-                data-aos="fade-left"
-                data-aos-easing="linear"
-                data-aos-delay="1"
-                data-aos-duration="300"
-              >
-                <span class="feature-category">BATTERY</span>
-                <p class="feature-details">
-                  Li-Po 3700 mAh, non-removable<br />
-                  25W wired, 50% in 30 min (advertised)<br />
-                  15W wireless<br />
-                  4.5W reverse wireless
-                </p>
+            <div
+              class="d-flex justify-content-start align-items-center col-12 col-sm-6 col-md-4 pt-4"
+            >
+              <div class="txt text-start">
+                <span class="feature-subtitle">ROM Size</span>
+                <p class="feature-details">128GB</p>
               </div>
             </div>
           </div>
@@ -1103,7 +1032,7 @@
         <div class="container-fluid">
           <div class="row mx-0">
             <div class="d-flex justify-content-center col-12">
-              <h1 class="headline">Performance</h1>
+              <h1 class="white-headline">Performance</h1>
             </div>
           </div>
 
@@ -1179,7 +1108,7 @@
               videoClientRect <= windowHeight - videoHeight * 0.5 &&
               videoClientRect >= 0 - videoHeight * 0.5
             ) {
-              viceo1.play();
+              video1.play();
             } else {
               video1.pause();
             }
