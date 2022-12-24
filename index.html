@@ -25,17 +25,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
 
-    <!-- Slick -->
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-    /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -82,7 +71,11 @@
         background-attachment: fixed;
       }
 
-      #header3 {
+      #build-section1 {
+        padding: 0;
+        background-color: #D9DBDA;
+      }
+      #build-section2 {
         width: auto;
         background-image: url("https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/theme2.png?raw=true");
         background-repeat: no-repeat;
@@ -338,6 +331,33 @@
         color: #cdcdcd;
         font-size: 24px;
         font-weight: 500;
+      }
+
+      .build-block {
+        background-color: white;
+        width: 400px;
+      }
+
+      .build-txt {
+        padding: 30px;
+        height: 150px;
+        width: 100%;
+      }
+
+      .img-container,
+      .build-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: all .2s ease-in-out;
+      }
+
+      .card {
+        box-shadow: -5px 5px 20px #e1e1e1;
+      }
+
+      .img-container:hover {
+        transform: scale(1.05);
       }
     </style>
   </head>
@@ -1087,8 +1107,6 @@
                   (900), N12 (700), N20 (800), N25 (1900), N28 (700), N66
                   (AWS-3)
                 </p>
-
-                
               </div>
             </div>
 
@@ -1160,7 +1178,7 @@
                 <p class="feature-details">Smart Switch (PC version)</p>
               </div>
             </div>
-            
+
             <div
               class="d-flex justify-content-start align-items-start col-12 col-sm-6 col-md-4 pt-4"
               data-aos="fade-up"
@@ -1345,7 +1363,8 @@
         <div class="container-fluid">
           <div class="row mx-0">
             <div class="d-flex justify-content-center col-12">
-              <h1 class="white-headline">Performance</h1>
+              <h1 class="white-headline"data-aos="fade-in"
+              data-aos-easing="linear">Performance</h1>
             </div>
           </div>
 
@@ -1384,19 +1403,20 @@
             </div>
 
             <div class="col-12 my-3">
-              <video autoplay
-              muted
-              playsinline
-              width="100%"
-              data-aos="zoom-in"
-              data-aos-easing="up"
-              data-aos-delay="100"
-              data-aos-duration="500"
-              type="video/mp4"
-              placeholder="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/buy/Flip4_Carousel_GroupKV_PC.jpg?imwidth=1366"
-              src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/video2.mp4?raw=true"
-              width="100%"
-            ></video>
+              <video
+                autoplay
+                muted
+                playsinline
+                width="100%"
+                data-aos="zoom-in"
+                data-aos-easing="up"
+                data-aos-delay="100"
+                data-aos-duration="500"
+                type="video/mp4"
+                placeholder="https://images.samsung.com/ph/smartphones/galaxy-z-flip4/buy/Flip4_Carousel_GroupKV_PC.jpg?imwidth=1366"
+                src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/video2.mp4?raw=true"
+                width="100%"
+              ></video>
             </div>
           </div>
         </div>
@@ -1405,13 +1425,259 @@
 
     <!-- BUILD -->
     <div id="build">
-      <header id="header3">
-        <div class="row">
-          <div class="d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-6">
-            <img src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/build-dimensions.png?raw=true" alt="" class="img-fluid position-sticky" width="30%">
+      <section id="build-section1" class="m-0 p-0">
+        <div class="container-fluid text-center">
+          <h1 class="headline mt-5">Physical Specification</h1>
+          <div class="row">
+            
+
+            <div class="col-12 col-sm-12 col-md-6">
+              <img class="img-fluid" src="https://github.com/nicolealcala/SAM-Midterms/blob/main/assets/build-dimensions.png?raw=true" alt="" width="70%">
+            </div>
           </div>
         </div>
-      </header>
+      </section>
+      
+      <section id="build-section2">
+        <div class="container-fluid text-center">
+          <h1 class="headline">Display</h1>
+          <!-- 1st Page -->
+          <div class="row">
+            <div
+              class="d-flex justify-content-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b> Size (Main Display)</b><br />
+                      170.3mm (6.7" full rectangle) / 166.4mm (6.6" rounded
+                      corners)
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4da99dc0-1808-11ed-bffa-e644437e8c9e"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b> Resolution (Main Display)</b><br />
+                      2640 x 1080 (FHD+)
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://www.digitaltrends.com/wp-content/uploads/2022/08/samsung-galaxy-z-flip-4-review-9.jpg?fit=720%2C479&p=1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b> Technology (Main Display)</b><br />
+                      Dynamic AMOLED 2X
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4de5e370-1808-11ed-b7f7-a15f83be8267"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Page -->
+          <div class="row">
+            <div
+              class="d-flex justify-content-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b>Color Depth (Main Display)</b><br />
+                      16M
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://s.yimg.com/os/creatr-uploaded-images/2022-08/4de9b400-1808-11ed-85f2-d933ecca4f15"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b>Max Refresh Rate (Main Display)</b><br />
+                      120 Hz
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://www.cnet.com/a/img/resize/4b0042b75537e0f19824cbb819d01c351f54872a/hub/2022/09/02/45cbcaaa-85a7-474c-a660-1db3ff5956f4/p1020403.jpg?auto=webp&width=1200"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b>Size (Sub Display)</b><br />
+                      48.2mm (1.9" full rectangle) / 46.0mm (1.8" rounded
+                      corners)
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://www.cnet.com/a/img/resize/807f7a4b9118cb8daeb723db8e27c87f06a35288/hub/2021/08/13/5a726a10-ef23-4659-af12-96065fa0ccec/p1006284-3.jpg?auto=webp&width=1200"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd Page -->
+          <div class="row">
+            <div
+              class="d-flex justify-content-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b>Resolution (Sub Display)</b><br />
+                      260 x 512</span
+                    >
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://www.digitaltrends.com/wp-content/uploads/2021/08/galaxy-z-flip-3-open-on-base.jpg?p=1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b>Technology (Sub Display)</b><br />
+                      Super AMOLED
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://www.digitaltrends.com/wp-content/uploads/2022/08/samsung-galaxy-z-flip-4-review-16.jpg?p=1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center align-items-center col-12 col-sm-12 col-md-4"
+            >
+              <div class="build-block card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-center align-items-center text-center build-txt"
+                  >
+                    <span>
+                      <b>Color Depth (Sub Display) </b><br />
+                      16M
+                    </span>
+                  </div>
+
+                  <div class="img-container">
+                    <img
+                      class="build-img"
+                      src="https://www.cnet.com/a/img/resize/5c00a69d8324ba2fd991804611fb712daba89c84/hub/2022/09/02/fdeaa32c-dc4e-434b-8d6c-d6afd895e3fb/p1020213.jpg?auto=webp&width=1200"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Bootstrap JS -->
@@ -1446,6 +1712,7 @@
               videoClientRect <= windowHeight - videoHeight * 0.5 &&
               videoClientRect >= 0 - videoHeight * 0.5
             ) {
+              video1.playbackRate = 1.25;
               video1.play();
             } else {
               video1.pause();
