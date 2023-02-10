@@ -20,73 +20,57 @@
       type="image/x-icon"
       href="https://raw.githubusercontent.com/nicolealcala/SAM-Midterms/main/SAM-Activity4/favicon.ico"
     />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
+      .navbar {
+        padding: 12px 10px;
+        background-color: #1b232e;
+      }
+
+      a:hover {
+        color: #cca5e8;
+      }
+      .navbar-brand,
+      .chartTitle {
+        font-family: "Outfit", sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: whitesmoke;
+      }
+
+      .chartTitle {
+        font-size: 18px;
+        color: #b4bac3;
+      }
+
+      @media screen and (max-width: 500px) {
+        .chartTitle {
+          font-size: 14px;
+        }
+
+        canvas {
+          height: 300px;
+        }
+      }
+    </style>
   </head>
   <body style="background-color: #0d1520">
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="">Nicole Alcala</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <a class="navbar-brand d-flex align-items-end" href="#"
+          ><img
+            class="me-3"
+            src="https://github.com/nicolealcala/SAM-Midterms/blob/main/SAM-Activity4/LOGO.png?raw=true"
+            style="width: auto; height: 50px"
+          />Nicole Alcala</a
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
       </div>
     </nav>
-    <div
-      class="container d-flex justify-content-center align-items-center"
-      style="height: 100vh"
-    >
+    <div class="container text-center">
       <div
-        class="card p-3"
+        class="card p-3 my-5"
+        id="chartDiv"
         style="
           background-color: #1b232e;
           width: 100%;
@@ -94,8 +78,18 @@
           border-radius: 15px;
         "
       >
+        <span class="chartTitle text-center my-3"
+          >Median Monthly Basic Pay and Allowance of Time-Rated Workers on
+          Full-Time Basis by Major Industry Group, Philippines: 2020 and
+          2018</span
+        >
         <canvas id="bubbleChart" style="width: 80%; height: 500px"></canvas>
       </div>
+      <footer>
+        <span class="text-center" style="color: #707070"
+          >Data from <a href="psa.gov.ph">psa.gov.ph</a></span
+        >
+      </footer>
     </div>
 
     <!-- JQuery -->
@@ -226,6 +220,12 @@
             },
           },
         },
+      });
+
+      window.addEventListener("resize", function () {
+        fontSize = chartContainer.offsetWidth / 25;
+        myBubbleChart.options.title.fontSize = fontSize;
+        myBubbleChart.update();
       });
     </script>
   </body>
