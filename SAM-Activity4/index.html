@@ -10,6 +10,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
     <!-- Favicon -->
     <link
       rel="icon"
@@ -17,23 +21,212 @@
       href="https://raw.githubusercontent.com/nicolealcala/SAM-Midterms/main/SAM-Activity4/favicon.ico"
     />
   </head>
-  <body>
-    Hello
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <body style="background-color: #0d1520">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="">Nicole Alcala</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container d-flex justify-content-center align-items-center"
+      style="height: 100vh"
+    >
+      <div
+        class="card p-3"
+        style="
+          background-color: #1b232e;
+          width: 100%;
+          height: auto;
+          border-radius: 15px;
+        "
+      >
+        <canvas id="bubbleChart" style="width: 80%; height: 500px"></canvas>
+      </div>
+    </div>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+      var ctx = document.getElementById("bubbleChart").getContext("2d");
+      var myBubbleChart = new Chart(ctx, {
+        type: "bubble",
+        data: {
+          datasets: [
+            {
+              label: "2020",
+              data: [
+                { x: 10476, y: 2137, r: 121 / 30 }, //agri
+                { x: 13272, y: 1310, r: 24 / 30 }, //Mining
+                { x: 11651, y: 1817, r: 747 / 30 }, //manufacturing
+                { x: 27253, y: 3848, r: 34 / 30 }, //electricity
+                { x: 15242, y: 2299, r: 21 / 30 }, //water supply
+                { x: 13800, y: 2650, r: 257 / 30 }, //construction
+                { x: 12592, y: 2106, r: 546 / 30 }, //wholesale and retail
+                { x: 14252, y: 2548, r: 118 / 30 }, //transpo
+                { x: 11806, y: 1311, r: 136 / 30 }, //accommodation
+                { x: 24469, y: 2794, r: 124 / 30 }, //info and comm
+                { x: 15986, y: 2673, r: 282 / 30 }, //financial and insu
+                { x: 16238, y: 1993, r: 43 / 30 }, //real estate
+                { x: 19596, y: 2956, r: 75 / 30 }, //professional eme
+                { x: 13750, y: 2668, r: 1037 / 30 }, //administrative eme
+                { x: 15228, y: 1955, r: 231 / 30 }, //educ
+                { x: 14721, y: 1973, r: 155 / 30 }, //human health
+                { x: 14846, y: 6119, r: 40 / 30 }, //art entertainment
+                { x: 14045, y: 1524, r: 9 / 30 }, //repair of comp
+              ],
+              backgroundColor: "rgba(255, 99, 132, 0.2)",
+              borderColor: "rgba(255, 99, 132, 1)",
+            },
+            {
+              label: "2018",
+              data: [
+                { x: 9861, y: 2137, r: 121 / 30 }, //agri
+                { x: 11590, y: 1310, r: 24 / 30 }, //Mining
+                { x: 10965, y: 1817, r: 747 / 30 }, //manufacturing
+                { x: 24627, y: 3848, r: 34 / 30 }, //electricity
+                { x: 15356, y: 2299, r: 21 / 30 }, //water supply
+                { x: 13611, y: 2650, r: 257 / 30 }, //construction
+                { x: 13299, y: 2106, r: 546 / 30 }, //wholesale and retail
+                { x: 13623, y: 2548, r: 118 / 30 }, //transpo
+                { x: 12216, y: 1311, r: 136 / 30 }, //accommodation
+                { x: 25261, y: 2794, r: 124 / 30 }, //info and comm
+                { x: 18486, y: 2673, r: 282 / 30 }, //financial and insu
+                { x: 17989, y: 1993, r: 43 / 30 }, //real estate
+                { x: 19263, y: 2956, r: 75 / 30 }, //professional eme
+                { x: 13916, y: 2668, r: 1037 / 30 }, //administrative eme
+                { x: 14506, y: 1955, r: 231 / 30 }, //educ
+                { x: 13411, y: 1973, r: 155 / 30 }, //human health
+                { x: 14653, y: 6119, r: 40 / 30 }, //art entertainment
+                { x: 13548, y: 1524, r: 9 / 30 }, //repair of comp
+              ],
+              backgroundColor: "rgba(54, 162, 235, 0.2)",
+              borderColor: "rgba(54, 162, 235, 1)",
+            },
+          ],
+          labels: [
+            "Agriculture, Forestry, and Fishing",
+            "Mining and Quarrying",
+            "Manufacturing",
+            "Electricity, Gas, Steam and Air Conditioning Supply",
+            "Watter Supply; Sewerage, Waste Management and Remediation Activities",
+            "Construction",
+            "Wholesale and Retail Trade; Repair of Motor Vehicles and Motorcycles",
+            "Transportaiton and Storage",
+            "Accommodation and Food Service Activities",
+            "Information anf Communications",
+            "Financial and Insurance Activities",
+            "Ral Estate Activities",
+            "Professional, Scientific and Technical Activities",
+            "Administrative and upport Service Activities",
+            "Education Except Public Education",
+            "Human Health and Social Work Activities",
+            "Art, Entertainment and Recreation",
+            "Repair of Computers and Personal and Household Goods; Other Personal Service Activities",
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            xAxes: [
+              {
+                ticks: {
+                  min: 0,
+                },
+                gridLines: {
+                  display: true,
+                  color: "rgba(174, 174, 174, 0.2)",
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: "Median Monthly Basic Pay",
+                  fontColor: "#B4BAC3",
+                },
+              },
+            ],
+            yAxes: [
+              {
+                ticks: {
+                  min: 0,
+                },
+                gridLines: {
+                  display: true,
+                  color: "rgba(174, 174, 174, 0.2)",
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: "Median Monthly Allowance",
+                  fontColor: "#B4BAC3",
+                },
+              },
+            ],
+          },
+          legend: {
+            display: true,
+            position: "top",
+            labels: {
+              fontColor: "#B4BAC3",
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>
